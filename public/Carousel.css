@@ -1,0 +1,16 @@
+/*
+
+/*==============================================
+// カルーセルスタイル
+// 基本はstyled-componentsでスタイリングする
+// slickを使うのでclass名を設定する必要があるもののスタイル
+//==============================================*/
+
+.slick-dots li {
+  margin: 0 15px;
+}
+
+.slick-dots .slick-active {
+  background: white;
+  border-radius: 50%;
+}

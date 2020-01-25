@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="37.498" height="29.858" viewBox="0 0 37.498 29.858">
+  <g id="eye_icon_アートボード_1" data-name="eye_icon_アートボード 1" transform="translate(-3.94 -36.75)" opacity="0.5">
+    <path id="パス_10" data-name="パス 10" d="M22.888,107.382c-7.382,0-14.321-4.336-18.564-11.6l-.154-.262.154-.262C8.567,88,15.506,83.66,22.888,83.66S37.21,88,41.452,95.259l.154.262-.154.262C37.21,103.045,30.27,107.382,22.888,107.382ZM5.384,95.52c4.064,6.779,10.588,10.816,17.5,10.816s13.44-4.037,17.5-10.816C36.328,88.74,29.8,84.7,22.888,84.7S9.448,88.74,5.384,95.52Z" transform="translate(-0.2 -40.774)" fill="#6e6e6e"/>
+    <circle id="楕円形_1" data-name="楕円形 1" cx="9.371" cy="9.371" r="9.371" transform="translate(13.317 45.374)" fill="#6e6e6e"/>
+    <circle id="楕円形_2" data-name="楕円形 2" cx="2.519" cy="2.519" r="2.519" transform="translate(16.231 48.761)" fill="#ececec"/>
+    <circle id="楕円形_3" data-name="楕円形 3" cx="1.575" cy="1.575" r="1.575" transform="translate(24.578 58.053)" fill="#ececec"/>
+    <line id="線_5" data-name="線 5" x2="1.173" y2="2.009" transform="translate(11.722 39.28)" fill="#fff"/>
+    <rect id="長方形_7" data-name="長方形 7" width="1.047" height="2.327" transform="translate(11.269 39.543) rotate(-30.27)" fill="#6e6e6e"/>
+    <line id="線_6" data-name="線 6" x2="1.43" y2="1.835" transform="translate(7.002 42.173)" fill="#fff"/>
+    <rect id="長方形_8" data-name="長方形 8" width="1.047" height="2.327" transform="matrix(0.789, -0.615, 0.615, 0.789, 6.59, 42.494)" fill="#6e6e6e"/>
+    <line id="線_7" data-name="線 7" x2="0.538" y2="2.264" transform="translate(17.392 37.421)" fill="#fff"/>
+    <rect id="長方形_9" data-name="長方形 9" width="1.047" height="2.327" transform="matrix(0.973, -0.231, 0.231, 0.973, 16.882, 37.542)" fill="#6e6e6e"/>
+    <line id="線_8" data-name="線 8" x1="0.013" y2="2.327" transform="translate(22.701 36.754)" fill="#fff"/>
+    <rect id="長方形_10" data-name="長方形 10" width="2.328" height="1.047" transform="matrix(0.005, -1, 1, 0.005, 22.177, 39.078)" fill="#6e6e6e"/>
+    <path id="パス_11" data-name="パス 11" d="M40.636,61.444A24.882,24.882,0,0,0,22.8,52.81h-.122c-6.4,0-13.6,3.467-17.937,8.627l-.8-.672A25.983,25.983,0,0,1,22.557,51.77h.131c6.7,0,14.231,3.618,18.75,9.007Z" transform="translate(0 -13.055)" fill="#6e6e6e"/>
+    <line id="線_9" data-name="線 9" x1="1.173" y2="2.011" transform="translate(32.477 39.275)" fill="#fff"/>
+    <rect id="長方形_11" data-name="長方形 11" width="2.328" height="1.047" transform="translate(32.024 41.022) rotate(-59.73)" fill="#6e6e6e"/>
+    <line id="線_10" data-name="線 10" x1="1.431" y2="1.837" transform="translate(37.072 42.039)" fill="#fff"/>
+    <rect id="長方形_12" data-name="長方形 12" width="2.328" height="1.047" transform="translate(36.66 43.553) rotate(-52.07)" fill="#6e6e6e"/>
+    <line id="線_11" data-name="線 11" x1="0.539" y2="2.266" transform="translate(27.439 37.414)" fill="#fff"/>
+    <rect id="長方形_13" data-name="長方形 13" width="2.328" height="1.047" transform="translate(26.929 39.557) rotate(-76.63)" fill="#6e6e6e"/>
+  </g>
+</svg>

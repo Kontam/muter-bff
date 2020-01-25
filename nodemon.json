@@ -1,0 +1,5 @@
+{
+  "watch": ["bff"],
+  "ext": "ts",
+  "exec": "NODE_PATH=./bff NODE_ENV=development ./node_modules/.bin/ts-node --project tsconfig.bff.json bff/index.ts"
+}
