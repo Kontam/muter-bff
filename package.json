@@ -78,11 +78,11 @@
     "sass-loader": "^8.0.0",
     "ts-loader": "^6.2.1",
     "ts-node": "^8.5.4",
-    "typescript": "^3.7.3",
     "url-loader": "^3.0.0"
   },
   "dependencies": {
     "@types/enzyme": "^3.10.4",
+    "typescript": "^3.7.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/express-session": "^1.15.16",
     "@types/jest": "^24.0.23",
