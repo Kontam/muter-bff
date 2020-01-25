@@ -13,7 +13,6 @@ export const setBasePath = (basePath :BasePath) => ({type: SET_BASEPATH, payload
 
 
 const basePath = (state :BasePath = "", action :basePathAction) => {
-  if (!state) state = "blank";
   switch (action.type) {
     case SET_BASEPATH:
       return action.payload;

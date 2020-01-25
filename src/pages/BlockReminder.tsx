@@ -13,7 +13,7 @@ const Page: NextPage = () => {
     <>
       <Head />
       <LoginPage
-        basePath={"https://muter-bff.now.sh/"}
+        basePath={base_path}
         appName={LoginConst.APPNAME_BLOCKER}
       />
     </>

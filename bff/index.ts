@@ -17,8 +17,13 @@ const passport = auth.passport;
 const router = require('./routes/router');
 const FirebaseStore = require('connect-session-firebase')(session);
 const firebase = require('firebase-admin');
+const cert = {
+  projectId: process.env.FIREBASE_PROJECT_ID,
+  clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
+  privateKey: process.env.FIREBASE_PRIVATE_KEY && process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+};
 const ref = firebase.initializeApp({
-  credential: firebase.credential.cert('./serviceAccountKey.json'),
+  credential: firebase.credential.cert(cert),
   databaseURL: "https://muter-263c3.firebaseio.com",
 });
 
