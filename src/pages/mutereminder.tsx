@@ -13,7 +13,7 @@ const Page: NextPage = () => {
     <>
       <Head />
       <TwitterApps
-        basePath={base_path}
+        basePath={"https://muter-bff.now.sh/"}
         // appName={TwAppsConst.APPNAME_MUTER}
       />
     </>
