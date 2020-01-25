@@ -15,7 +15,6 @@
     "build-storybook": "build-storybook",
     "shell": "npm run build && firebase functions:shell",
     "start": "npm run build:next && npm run start:fe",
-    "build": "npm run start:fe",
     "deploy": "firebase deploy",
     "logs": "firebase functions:log",
     "preserve": "npm run build-public && npm run build-funcs && npm run build-app && npm run copy-deps && npm run copy-deps && npm run install-deps",
