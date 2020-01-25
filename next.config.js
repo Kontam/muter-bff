@@ -18,7 +18,7 @@ module.exports = withImages(withSass({
       CONSUMER_KEY: process.env.CONSUMER_KEY,
       CONSUMER_SECRET: process.env.CONSUMER_SECRET,
       SESSION_SECRET: process.env.SESSION_SECRET,
-      JWT_SECRET: process.env.JWT_SECRET
+      JWT_SECRET: process.env.JWT_SECRET,
     },
     webpack: config => {
       config.plugins = config.plugins || []
