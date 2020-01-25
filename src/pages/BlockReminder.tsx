@@ -8,12 +8,12 @@ const Page: NextPage = () => {
   const base_path = process.env.NODE_ENV === "production"
   ? process.env.BASE_URL
   : process.env.BASE_URL_DEV;
-
+  console.log(process.env);
   return (
     <>
       <Head />
       <LoginPage
-        basePath={base_path}
+        basePath={"https://muter-bff.now.sh/"}
         appName={LoginConst.APPNAME_BLOCKER}
       />
     </>
