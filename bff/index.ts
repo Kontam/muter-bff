@@ -40,7 +40,7 @@ const app = async () => {
       resave: true,
       saveUninitialized: false,
       // trueが推奨だがhttps通信が必須になるのでproiductionのみとする
-      // httpsでも有効化するとセッションが保持されない
+      // httpsでも有効化するとセッションが保持されない。
       // cookie: { secure: process.env.NODE_ENV === 'production' }
     })
   )
