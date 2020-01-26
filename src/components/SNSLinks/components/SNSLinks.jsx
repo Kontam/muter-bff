@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { mediaQ } from '../../../commonModules/media.ts';
+import { mediaQ } from '../../../modules/styles/media.ts';
 import TwitterLinkButton from './TwitterLinkButton';
 import LineLinkButton from './LineLinkButton';
 import FacebookLinkButton from './FacebookLinkButton';

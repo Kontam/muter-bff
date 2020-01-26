@@ -2,8 +2,8 @@ import React, { Component } from 'react';
 import styled, { css } from 'styled-components';
 import PropTypes from 'prop-types';
 
-import { mediaQ } from '../../../commonModules/media.ts';
-import sendLogData from '../../../commonModules/sendLogData';
+import { mediaQ } from '../../../modules/styles/media.ts';
+import sendLogData from '../../../modules/sendLogData';
 import SNSLinksConst from '../SNSLinksConst';
 
 class SNSLinkButton extends Component {

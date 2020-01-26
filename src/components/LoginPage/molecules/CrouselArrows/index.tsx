@@ -2,7 +2,7 @@ import React from 'react';
 import styled from 'styled-components';
 
 import { resetButton } from '../../styles/define';
-import { mediaQ } from '../../../../commonModules/media';
+import { mediaQ } from '../../../../modules/styles/media';
 import CarouselArrow from '../../atoms/CarouselArrow'
 import LoginConst from '../../LoginConst';
 const arrowLeft = require(`../../../../../img/slick/slick-arrow-left.svg`);

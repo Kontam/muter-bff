@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { mediaQ } from '../../../commonModules/media';
+import { mediaQ } from '../../../modules/styles/media';
 import StyleConst from '../styles/define';
 // import arrow_down from '../../../../../img/arrow_down.svg';
 const arrow_down = require('../../../../img/arrow_down.svg');

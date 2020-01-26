@@ -1,7 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
 
-import { mediaQ } from '../../../../commonModules/media';
+import { mediaQ } from '../../../../modules/styles/media';
 import { CarouselInfo } from "../../auganisms/Carousel/Carousel";
 
 interface CarouselPageProps {

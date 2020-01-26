@@ -5,7 +5,7 @@ import { RootState } from '../../../../redux/reducers';
 
 import LoginConst from '../../LoginConst';
 import StyleConst, { resetAnchor } from '../../styles/define';
-import { mediaQ } from '../../../../commonModules/media';
+import { mediaQ } from '../../../../modules/styles/media';
 const whiteTwitterIcon = require('../../../../../img/twitter_white_icon.svg')
 
 // interface StateByProps {
