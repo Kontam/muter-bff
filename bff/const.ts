@@ -8,7 +8,7 @@ const BffConst = {
   ? process.env.BASE_URL : process.env.BASE_URL_DEV,
 
   //Backend API
-  API_MUTER_TOP_SLUG: '/muter_top',
+  API_MUTER_TOP_SLUG: '/user_info_api',
   API_MUTED_LIST_SLUG: '/muted_list_api',
   API_STORE_LOGIN_SLUG: '/login_store_api',
   API_CHECK_LOGIN_API: '/login_check_api',
