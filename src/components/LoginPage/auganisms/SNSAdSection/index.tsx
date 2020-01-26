@@ -5,7 +5,7 @@ import { connect } from 'react-redux';
 
 import SNSLinks from '../../../SNSLinks/components/SNSLinks';
 import StyleConst from '../../styles/define';
-import { mediaQ } from '../../../../commonModules/media';
+import { mediaQ } from '../../../../modules/styles/media';
 
 const SNSAdSection = ({ basePath }: {basePath: string}) => (
   <Container>

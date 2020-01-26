@@ -4,7 +4,7 @@ import { connect } from 'react-redux';
 
 import { RootState } from '../../../../redux/reducers';
 import LoginConst from '../../LoginConst';
-import { mediaQ } from '../../../../commonModules/media';
+import { mediaQ } from '../../../../modules/styles/media';
 import StyleConst from '../../styles/define';
 
 interface HeadLabel {
