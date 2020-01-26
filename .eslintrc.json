@@ -1,0 +1,21 @@
+{
+    "extends": ["airbnb"],
+    "plugins": [],
+    "env": {
+      "browser": true,
+      "es6": true,
+      "jquery": true,
+      "node" : true
+    },
+    "globals": {
+      "$": false
+    },
+    "rules": {
+      "indent": [ 2, 2 ],
+      "semi": "off"
+    },
+    "parserOptions": {
+      "sourceType": "module"
+    }
+
+}

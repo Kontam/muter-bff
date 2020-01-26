@@ -1,0 +1,10 @@
+{
+  "presets": ["next/babel", "@zeit/next-typescript/babel"],
+  "plugins": ["babel-plugin-styled-components"],
+  "env": {
+    "test": {
+      "plugins": ["require-context-hook", "macros"]
+    }
+  }
+}
+
