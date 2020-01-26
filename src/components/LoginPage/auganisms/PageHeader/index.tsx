@@ -2,10 +2,10 @@ import React from 'react';
 import styled, {css} from 'styled-components';
 import { connect } from 'react-redux';
 
-import { RootState } from '../../../redux/reducers';
-import LoginConst from '../LoginConst';
-import { mediaQ } from '../../../commonModules/media';
-import StyleConst from '../styles/define';
+import { RootState } from '../../../../redux/reducers';
+import LoginConst from '../../LoginConst';
+import { mediaQ } from '../../../../commonModules/media';
+import StyleConst from '../../styles/define';
 
 interface HeadLabel {
   line1: string
@@ -35,7 +35,7 @@ const PageHeader = ({ appName } :PageHeaderProps) => {
     line2: 'リマインダー',
     eng: 'Block Reminder',
   };
-  const headLabel = appName === LoginConst.APPNAME_MUTER ? muterLabel : blockerLabel;
+  const headLabel = appName === LoginConst.APPNAME_BLOCKER ?  blockerLabel : muterLabel;
 
   const muterGradient = css`linear-gradient(to bottom right, #84FAB1, #8FD3F4)`;
   const blockerGradient = css`linear-gradient(to bottom right, #8FD3F4, #79DAE3)`;

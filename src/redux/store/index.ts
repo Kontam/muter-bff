@@ -3,9 +3,10 @@ import { composeWithDevTools } from 'redux-devtools-extension';
 import thunk from 'redux-thunk';
 import reducer, { RootState } from '../reducers';
 import TwAppsConst from '../../components/TwApps/TwAppsConst';
+import LoginConst from '../../components/LoginPage/LoginConst';
 
 export const initialState :RootState = {
-  appName: "",
+  appName: LoginConst.APPNAME_MUTER,
   basePath: "",
   isMuterMenuOpened: true,
   userInfo :{},

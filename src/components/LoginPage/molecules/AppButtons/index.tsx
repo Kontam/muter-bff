@@ -44,14 +44,21 @@ const AppButtons = ({ appName } :AppButtonsProps) => {
   return (
     <List>
       <li>
-        <Link href={`/`} passHref>
+        <Link
+          href={`/`}
+          passHref
+          scroll={false}
+         >
           <MuterButton appName={appName}>
             ミュートリマインダー
           </MuterButton>
         </Link>
       </li>
       <li>
-        <Link href={`/${LoginConst.APPNAME_BLOCKER}`}>
+        <Link 
+          href={`/${LoginConst.APPNAME_BLOCKER}`}
+          scroll={false}
+         >
           <BlockerButton appName={appName}>
             ブロックリマインダー
           </BlockerButton>
