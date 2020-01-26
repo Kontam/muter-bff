@@ -16,13 +16,13 @@ const router = require('./routes/router');
 const FirebaseStore = require('connect-session-firebase')(session);
 const firebase = require('firebase-admin');
 const cert = {
-  projectId: process.env.FIREBASE_PROJECT_ID,
-  clientEmail: process.env.FIREBASE_CLIENT_EMAIL,
-  privateKey: process.env.FIREBASE_PRIVATE_KEY && process.env.FIREBASE_PRIVATE_KEY.replace(/\\n/g, '\n'),
+  projectId: BffConst.FIREBASE_PROJECT_ID,
+  clientEmail: BffConst.FIREBASE_CLIENT_EMAIL,
+  privateKey: BffConst.FIREBASE_PRIVATE_KEY,
 };
 const ref = firebase.initializeApp({
   credential: firebase.credential.cert(cert),
-  databaseURL: "https://muter-263c3.firebaseio.com",
+  databaseURL: BffConst.FIREBASE_DATABASE_URL,
 });
 
 export {};
@@ -36,12 +36,11 @@ const app = async () => {
       store: new FirebaseStore({
         database: ref.database()
       }),
-      // secret: process.env.SESSION_SECRET,
-      secret: "temp secret",
+      secret: process.env.SESSION_SECRET,
       resave: true,
       saveUninitialized: false,
       // trueが推奨だがhttps通信が必須になるのでproiductionのみとする
-      // cookie: { secure: process.env.NODE_ENV === 'production' }
+      cookie: { secure: process.env.NODE_ENV === 'production' }
     })
   )
   //認証のセッションを初期化
