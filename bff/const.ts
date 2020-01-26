@@ -19,6 +19,8 @@ const BffConst = {
   LOGIN_CHECK_SLUG: '/login',
   MUTER_TOP_SLUG: '/muter',
   CALLBACK_SLUG: '/callback',
+  LOGIN_SUCESS: '/success',
+  LOGIN_FAILED: '/fail',
   MUTED_LIST_SLUG: '/muted_list',
   USER_INFO_SLUG: '/user_info',
   TWITTER_LOGIN_SLUG: '/twitter_login',
@@ -30,6 +32,10 @@ const BffConst = {
 
   //Messages
   MSG_API_LOGIN_FAIL: 'login failure',
+
+  //Twitter
+  TWITTER_CONSUMER_KEY: process.env.CONSUMER_KEY,
+  TWITTER_CONSUMER_SECRET: process.env.CONSUMER_SECRET,
 
   //Firebase
   FIREBASE_PROJECT_ID: process.env.FIREBASE_PROJECT_ID,

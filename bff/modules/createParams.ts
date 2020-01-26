@@ -1,5 +1,3 @@
-import { Express } from 'express';
-
 type ParamsWithToken = {
   twitter_token: string
   twitter_token_secret: string

@@ -16,8 +16,6 @@ export type UserInfo = {
 */
 exports.user_info = async function(req :Request, res: Response) {
   let params = {};
-  console.log("commonController",req.session)
-  console.log("commonController",req.sessionID);
   if (req.session) {
     params = createParamsWithToken(req.session);
   }

@@ -1,13 +1,9 @@
-// const passport = require('passport');
 import BffConst from '../const';
-
-const jwt = require('jsonwebtoken');
-
 const TwitterStrategy = require('passport-twitter');
 const passport = require('passport');
 
-const twitterConsumerKey = process.env.CONSUMER_KEY;
-const twitterSecretKey = process.env.CONSUMER_SECRET;
+const twitterConsumerKey = BffConst.TWITTER_CONSUMER_KEY;
+const twitterSecretKey = BffConst.TWITTER_CONSUMER_SECRET;
 const callbackURL = `${BffConst.BASE_URL}${BffConst.CALLBACK_SLUG}`;
 
 passport.serializeUser(function(user :any, done :any) {

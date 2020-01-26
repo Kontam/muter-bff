@@ -14,7 +14,6 @@ module.exports = withImages(withSass({
       BASE_URL: process.env.BASE_URL,
       API_BASE_URL_DEV: process.env.API_BASE_URL_DEV,
       API_BASE_URL: process.env.API_BASE_URL,
-      CALLBACK_SLUG: process.env.CALLBACK_SLUG,
       CONSUMER_KEY: process.env.CONSUMER_KEY,
       CONSUMER_SECRET: process.env.CONSUMER_SECRET,
       SESSION_SECRET: process.env.SESSION_SECRET,

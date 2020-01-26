@@ -39,8 +39,6 @@ export type MutedUsersAPIResource = {
  * @param {string} user_id DBにログを保存するためのキー
  */
 exports.muter_muted_users = async function(req :Request,res: Response) {
-  console.log("muterController",req.session);
-  console.log("muterController",req.sessionID);
   const extraParams = {
     user_id: req!.session!.passport.user.id,
   }
@@ -59,7 +57,7 @@ exports.muter_muted_users = async function(req :Request,res: Response) {
 exports.muter_unmute_user = async function(req: Request, res: Response, next: NextFunction) {
   const extraParams = {};
   let params = {};
-  if(req.session) {
+  if (req.session) {
     params = createParamsWithToken(req.session, extraParams);
   }
   const endPoint = BffConst.API_UNMUTE_USER_SLUG + `/${req.params.screen_name || ''}`;
@@ -74,7 +72,7 @@ exports.muter_unmute_user = async function(req: Request, res: Response, next: Ne
 exports.muter_mute_user = async function(req: Request, res: Response, next: NextFunction) {
   const extraParams = {};
   let params = {};
-  if(req.session) {
+  if (req.session) {
     params = createParamsWithToken(req.session, extraParams);
   }
   const endPoint = BffConst.API_MUTE_USER_SLUG + `/${req.params.screen_name || ''}`;
