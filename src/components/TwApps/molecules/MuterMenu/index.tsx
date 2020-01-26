@@ -1,38 +1,23 @@
-import React from 'react';
-import styled, { keyframes } from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
-import { RootState } from '../../../../redux/reducers';
-import { theme, MyThemeProps, resetButton } from '../../../../modules/styles/theme';
-import { mediaQ } from '../../../../modules/styles/media';
-import { setIsMuterMenuOpened } from '../../../../redux/reducers/page/isMuterMenuOpened';
-const transparent_eye_icon = require('../../../../../img/transparent_eye_icon.svg');
+import React from "react";
+import styled, { keyframes } from "styled-components";
+import { useSelector, useDispatch } from "react-redux";
+import { RootState } from "../../../../redux/reducers";
+import {
+  MyThemeProps,
+  resetButton
+} from "../../../../modules/styles/theme";
+import { mediaQ } from "../../../../modules/styles/media";
+import { setIsMuterMenuOpened } from "../../../../redux/reducers/page/isMuterMenuOpened";
+const transparent_eye_icon = require("../../../../../img/transparent_eye_icon.svg");
 
-import ToggleMenuButton from '../../atoms/ToggleMenuButton';
-
-const openKeyframes = keyframes`
-  0% {
-    left: -${theme.sizes.menuAmimationDistance}px;
-  }
-  100% {
-    left: 0;
-  }
-`;
-
-const closeKeyframes = keyframes`
-  0% {
-    left: 0;
-  }
-  100% {
-    left: -${theme.sizes.menuAmimationDistance}px;
-  }
-`;
+import ToggleMenuButton from "../../atoms/ToggleMenuButton";
 
 /**
  * ContainerのsyledComponentを生成する
  * 開閉状態を動的に変更し、かつテスト可能にするために関数にする
  * @param {boolean} isOpened メニューの開閉を表すboolean
  */
-export const createContainer = (isOpened :boolean) => styled.div<any>`
+export const Container = styled.div<{ isOpened: boolean }>`
   background-color: ${({ theme }: MyThemeProps<{}>) => theme.colors.basicGray};
   bottom: 0;
   display: flex;
@@ -42,14 +27,17 @@ export const createContainer = (isOpened :boolean) => styled.div<any>`
   position: fixed;
   width: 100%;
   ${mediaQ.pc} {
-    border-right: solid 1px ${({ theme }: MyThemeProps<{}>) => theme.colors.darkGray};
+    border-right: solid 1px
+      ${({ theme }: MyThemeProps<{}>) => theme.colors.darkGray};
     display: block;
     height: 100vh;
     padding: 20px;
     position: fixed;
     top: 50px;
     width: 300px;
-    animation: ${isOpened ? openKeyframes : closeKeyframes} .3s both;
+    left: ${({ theme, isOpened }: MyThemeProps<{ isOpened: boolean }>) =>
+      isOpened ? 0 : -theme.sizes.menuAmimationDistance}px;
+    transition: .3s;
   }
 `;
 
@@ -68,7 +56,7 @@ export const CountButton = styled.button`
     width: 100%;
 
     &::before {
-      content: 'チラ見ツイート数';
+      content: "チラ見ツイート数";
       font-size: 1.125rem;
       font-weight: bold;
       margin-right: 75px;
@@ -81,25 +69,26 @@ const isOpendSelector = (state: RootState) => state.isMuterMenuOpened;
 
 const MuterMenu = () => {
   const isOpened = useSelector(isOpendSelector);
-  const Container = createContainer(isOpened);
   const dispatch = useDispatch();
   const onMenuButtonClick = () => {
     isOpened
-    ? dispatch(setIsMuterMenuOpened(false))
-    : dispatch(setIsMuterMenuOpened(true))
+      ? dispatch(setIsMuterMenuOpened(false))
+      : dispatch(setIsMuterMenuOpened(true));
   };
 
-  return(
-    <Container>
-    <ToggleMenuButton
-      onClick={() => {onMenuButtonClick();}}
-      isMenuOpened={isOpened}
-    />
+  return (
+    <Container isOpened={isOpened}>
+      <ToggleMenuButton
+        onClick={() => {
+          onMenuButtonClick();
+        }}
+        isMenuOpened={isOpened}
+      />
       <CountButton>
         <span className="tweets-count">3</span>
       </CountButton>
     </Container>
-  )
+  );
 };
 
 export default MuterMenu;
