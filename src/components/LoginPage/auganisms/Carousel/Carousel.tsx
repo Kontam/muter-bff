@@ -37,6 +37,12 @@ export const carouselInfos :CarouselInfo[]= [
   },
 ];
 
+// ページネーションドットを囲むulタグ
+const DotList = styled.ul`
+  bottom: -50px;
+  width: 100vw;
+`;
+
 // react-slickの設定値
 export const slickConfig = {
   infinite: true,
@@ -65,9 +71,3 @@ export const slickConfig = {
     },
   }],
 }
-
-// ページネーションドットを囲むulタグ
-const DotList = styled.ul`
-  bottom: -50px;
-  width: 100vw;
-`;

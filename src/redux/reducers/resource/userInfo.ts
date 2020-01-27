@@ -1,8 +1,7 @@
-import { Dispatch, AnyAction } from 'redux';
+import { Dispatch } from 'redux';
 
 import { startUserRequest, endUserRequest } from '../meta/userRequestStatus';
 import requestToServer from '../../../modules/requestToServer';
-import TwAppsConst from '../../../components/TwApps/TwAppsConst';
 
 export const ACTION_CHANGE_USER_INFO = 'CHANGE_USER_INFO' as const;
 

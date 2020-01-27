@@ -23,7 +23,7 @@ CarouselPage.displayName = "CarouselPage";
 export default CarouselPage;
 
 const Img = styled.img`
-    max-height: 90vh;
+    height: 80vh;
     width: 100vw;
     ${mediaQ.pc}{
       margin: 0 auto;

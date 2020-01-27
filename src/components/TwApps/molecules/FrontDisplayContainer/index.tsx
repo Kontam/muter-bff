@@ -46,10 +46,8 @@ const FrontDisplayContainer = () => {
 
   let style = {};
   // いずれかの要素がロード中の時は表示する
-  if (
-    muteRequestStatus === TwAppsConst.REQUEST_STATUS_COMPLETE
-      && userRequestStatus === TwAppsConst.REQUEST_STATUS_COMPLETE
-  ) {
+  if (muteRequestStatus === TwAppsConst.REQUEST_STATUS_COMPLETE
+      && userRequestStatus === TwAppsConst.REQUEST_STATUS_COMPLETE) {
     style = { display: 'none' };
   }
 

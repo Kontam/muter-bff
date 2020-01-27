@@ -8,24 +8,24 @@ import CarouselArrows from '../../molecules/CrouselArrows';
 import StyleConst from '../../styles/define';
 
 import { CarouselInfo, carouselInfos, slickConfig } from './Carousel';
+import { mediaQ } from '../../../../modules/styles/media';
 
+const Container = styled.div`
+  background-color: ${StyleConst.muterGreen};
+  padding: 50px 0 120px;
+  position: relative;
+  ${mediaQ.pc} {
+    min-height: 110vh;
+  }
+`;
 
 // =============================================
 // slick-carouselを使用しているためstyled-component化できない部分がある
 // 後の課題として、ひとまずscssファイルとクラス名付きのjsxを残す
 // =============================================
 const Carousel = () => {
-    const [hidden, setHidden] = useState(true);
-
-    // slickのカルーセル化の処理が終わるまで隠す
-    useEffect(() => {
-      setHidden(false);
-    },[]);
-
-
-
     return (
-      <Container hidden={hidden}>
+      <Container>
         <Slider {...slickConfig}>
           {carouselInfos.map((carouselInfo :CarouselInfo, index) =>
             <CarouselPage carouselInfo={carouselInfo} key={index} />
@@ -35,13 +35,5 @@ const Carousel = () => {
       </Container>
     );
 }
-
-const Container = styled.div`
-  background-color: ${StyleConst.muterGreen};
-  padding: 50px 0 120px;
-  position: relative;
-`;
-
-
 
 export default Carousel;

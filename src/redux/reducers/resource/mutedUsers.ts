@@ -1,6 +1,5 @@
 import { Dispatch } from "redux";
 import { setErrMessage } from "../page/errMessage";
-import { startUserRequest, endUserRequest } from "../meta/userRequestStatus";
 import { startMuteRequest, endMuteRequest } from "../meta/muteRequestStatus";
 import { setMuted, Muted } from "./muted";
 import { toggleMuted } from "./muted";
@@ -62,18 +61,18 @@ export const requestMutedUsers = (
   dispatch: Dispatch,
   params = {}
 ) => {
-  dispatch(startUserRequest());
+  dispatch(startMuteRequest());
   requestToServer(endpoint, params).then(({ data }: any) => {
     if ("code" in data[0]) {
       dispatch(setErrMessage(data[0].message));
-      dispatch(endUserRequest());
+      dispatch(endMuteRequest());
       return;
     }
     // 全てミュートフラグを立てた配列をミュートの初期値としてdispatch
     // ユーザーリストよりも先にこちらを作る（依存しているため）
     const initializedMuted: Muted = Array(data.length).fill(true);
     dispatch(setMuted(initializedMuted));
-    dispatch(endUserRequest());
+    dispatch(endMuteRequest());
     // ミュートユーザーをstoreに登録
     dispatch(setMutedUsers(data));
   });
