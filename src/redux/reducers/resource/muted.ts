@@ -3,12 +3,17 @@ export const ACTION_CHANGE_MUTED = 'CHANGE_MUTED' as const;
 
 export type Muted = boolean[];
 
-type SetMutedAction = {
+/**
+ * ミュート状態の初期化用アクション
+ */
+export type SetMutedAction = {
   type: typeof ACTION_CHANGE_MUTED
   payload: Muted
 }
-
-type ToggleMutedAction = {
+/**
+ * ミュート状態トグル用アクション
+ */
+export type ToggleMutedAction = {
   type: typeof ACTION_TOGGLE_MUTED
   payload: number
 }
