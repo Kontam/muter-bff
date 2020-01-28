@@ -1,10 +1,10 @@
 import React from 'react';
 import styled,{ css } from 'styled-components';
 
-import { mediaQ } from '../../../modules/styles/media';
-import StyleConst from '../styles/define';
-import LoginConst from '../LoginConst';
-import LoginForm from './LoginForm';
+import { mediaQ } from '../../../../modules/styles/media';
+import StyleConst from '../../styles/define';
+import LoginConst from '../../LoginConst';
+import LoginForm from '../LoginForm';
 
 
 

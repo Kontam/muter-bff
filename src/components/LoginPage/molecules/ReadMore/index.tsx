@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { mediaQ } from '../../../modules/styles/media';
-import StyleConst from '../styles/define';
-// import arrow_down from '../../../../../img/arrow_down.svg';
-const arrow_down = require('../../../../img/arrow_down.svg');
-// import Arrow_img from '../atoms/Arrow_img';
+import { mediaQ } from '../../../../modules/styles/media';
+import StyleConst from '../../styles/define';
+const arrow_down = require('../../../../../img/arrow_down.svg');
 
 const ReadMore = () => (
   <Container >

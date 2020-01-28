@@ -1,11 +1,11 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { mediaQ } from '../../../modules/styles/media';
-import StyleConst from '../styles/define';
-import LoginConst from '../LoginConst';
-import LoginButton from '../molecules/LoginButton';
-import OwnerLink from '../molecules/OwnerLink';
+import { mediaQ } from '../../../../modules/styles/media';
+import StyleConst from '../../styles/define';
+import LoginConst from '../../LoginConst';
+import LoginButton from '../../molecules/LoginButton';
+import OwnerLink from '../../molecules/OwnerLink';
 
 
 const LoginForm = () => (

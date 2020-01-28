@@ -1,11 +1,11 @@
 import React, { ReactText } from 'react';
 import styled from 'styled-components';
 
-import { mediaQ } from '../../../modules/styles/media';
+import { mediaQ } from '../../../../modules/styles/media';
 // import StyleConst from '../styles/define';
-import LoginConst from '../LoginConst';
-const house_white_icon = require('../../../../img/house_white_icon.svg');
-const twitter_white_icon = require('../../../../img/twitter_white_icon.svg');
+import LoginConst from '../../LoginConst';
+const house_white_icon = require('../../../../../img/house_white_icon.svg');
+const twitter_white_icon = require('../../../../../img/twitter_white_icon.svg');
 
 const OwnerInfo = () => (
   <Container>
