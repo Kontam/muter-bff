@@ -1,23 +1,15 @@
 import assert from 'power-assert';
-import muted, { Muted, ToggleMutedAction, ACTION_TOGGLE_MUTED, SetMutedAction, ACTION_CHANGE_MUTED } from '../muted';
+import muted, { Muted, ToggleMutedAction, ACTION_TOGGLE_MUTED, setMuted } from '../muted';
 
 describe("UIのミュートステータスのreducerテスト", () => {
     it("ミュート配列を初期化するアクションの確認", () => {
         let mockInitialState: Muted = [];
         const mockMuted = [true, false, true];
-        const mockSetMutedAction: SetMutedAction = {
-            type: ACTION_CHANGE_MUTED,
-            payload: mockMuted, 
-        };
         // 上書きされることを確認するための２回目データ
         const mockMutedAfter = [false,true,false];
-        const mockSetMutedActionAfter: SetMutedAction = {
-            type: ACTION_CHANGE_MUTED,
-            payload: mockMutedAfter, 
-        };
-        const newState = muted(mockInitialState, mockSetMutedAction);
+        const newState = muted(mockInitialState, setMuted(mockMuted));
         assert.deepEqual(newState, mockMuted);
-        assert.deepEqual(muted(newState, mockSetMutedActionAfter), mockMutedAfter)
+        assert.deepEqual(muted(newState, setMuted(mockMutedAfter)), mockMutedAfter)
     });
 
     it("ミュート状況をtoggleするアクションの確認", () => {
