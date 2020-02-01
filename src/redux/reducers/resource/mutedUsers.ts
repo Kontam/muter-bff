@@ -1,7 +1,7 @@
 import { Dispatch } from "redux";
-import { setErrMessage } from "../page/errMessage";
+import { setErrMessage, ErrInfo } from "../page/errMessage";
 import { startMuteRequest, endMuteRequest } from "../meta/muteRequestStatus";
-import { setMuted, Muted } from "./muted";
+import { setMuted, Muted, ToggleMutedResult } from "./muted";
 import { toggleMuted } from "./muted";
 import requestToServer from "../../../modules/requestToServer";
 
@@ -58,11 +58,12 @@ export const setMutedUsers = (mutedUsers: MutedUsers) => ({
  */
 export const requestMutedUsers = (
   endpoint: string,
-  dispatch: Dispatch,
   params = {}
-) => {
+) => (dispatch: Dispatch) => {
   dispatch(startMuteRequest());
-  requestToServer(endpoint, params).then(({ data }: any) => {
+  requestToServer<MutedUsers | ErrInfo[]>(endpoint, params).then((result) => {
+    if (!result) return console.error("MutedUsers Request Error", result);
+    const { data } = result;
     if ("code" in data[0]) {
       dispatch(setErrMessage(data[0].message));
       dispatch(endMuteRequest());
@@ -74,7 +75,7 @@ export const requestMutedUsers = (
     dispatch(setMuted(initializedMuted));
     dispatch(endMuteRequest());
     // ミュートユーザーをstoreに登録
-    dispatch(setMutedUsers(data));
+    dispatch(setMutedUsers(data as MutedUsers));
   });
 };
 
@@ -85,7 +86,9 @@ export const requestUnmuteUser = (
   dispatch: Dispatch,
 ) => {
   dispatch(startMuteRequest());
-  requestToServer(endpoint, {}).then(({ data }) => {
+  requestToServer<ToggleMutedResult>(endpoint, {}).then((result) => {
+    if (!result) return console.error("ToggleMute Request Error", result);
+    const { data } = result;
     // ミュート解除に成功した場合はユーザー情報objectが返される
     // スクリーンネームを照合して成否を確認する
     dispatch(endMuteRequest());
@@ -95,7 +98,7 @@ export const requestUnmuteUser = (
   });
 };
 
-const mutedUsers = (state: MutedUsers = [], action: MutedUsersAction) => {
+export const mutedUsers = (state: MutedUsers = [], action: MutedUsersAction) => {
   switch (action.type) {
     case ACTION_CHANGE_MUTED_USERS:
       return action.payload;

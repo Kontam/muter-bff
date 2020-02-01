@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useSelector, useDispatch } from "react-redux";
-import styled, { keyframes } from "styled-components";
+import styled from "styled-components";
 
 import { RootState } from "../../../../redux/reducers";
 import TwAppsConst from "../../TwAppsConst";
@@ -77,10 +77,9 @@ const UserList = () => {
     isMuterMenuOpened
   }: MutedUserListProps = useSelector(stateSelector);
   const dispatch = useDispatch();
-  // const List = createList(isMuterMenuOpened);
 
   useEffect(() => {
-    requestMutedUsers(basePath + TwAppsConst.MUTED_USERS_ENDPOINT, dispatch);
+   dispatch(requestMutedUsers(basePath + TwAppsConst.MUTED_USERS_ENDPOINT));
   }, []);
 
   return (

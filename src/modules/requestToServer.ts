@@ -1,11 +1,14 @@
-import axios from 'axios';
+import axios, { AxiosResponse } from 'axios';
 
-const requestToServer = (endpoint:string, params = {}) => {
+const requestToServer = <T>(endpoint:string, params = {}):Promise<void | {data: T, status:number}> => {
   return axios
   .get(endpoint, params)
-  .then((result) => {
+  .then((result: AxiosResponse<T>) => {
     const { data, status } = result;
     return { data, status };
+  })
+  .catch((error) => {
+    console.log()
   });
 }
 

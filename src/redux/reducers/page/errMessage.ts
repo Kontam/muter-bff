@@ -8,6 +8,11 @@ export type ErrMessageAction = SetErrMessageAction;
 
 export type ErrMessage = string;
 
+export type ErrInfo = {
+  code: number,
+  message: ErrMessage,
+}
+
 // 致命的なエラーメッセージの指定
 export const setErrMessage = (message: ErrMessage):SetErrMessageAction => ({ type: ACTION_CHANGE_ERR_MESSAGE, payload: message });
 
