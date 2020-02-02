@@ -1,9 +1,7 @@
 import * as React from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
 import Link from 'next/link';
 
-import { RootState } from '../../../../redux/reducers';
 import { resetAnchor } from '../../../../modules/styles/theme';
 import LoginConst from '../../LoginConst';
 import { MyThemeProps } from '../../../../modules/styles/theme';
@@ -40,7 +38,6 @@ export const List = styled.ul`
 `;
 
 const AppButtons = ({ appName } :AppButtonsProps) => {
-
   return (
     <List>
       <li>
@@ -68,8 +65,4 @@ const AppButtons = ({ appName } :AppButtonsProps) => {
   );
 };
 
-export default connect(
-  (state :RootState) => ({
-    appName: state.appName,
-  }),
-)(AppButtons);
+export default AppButtons;

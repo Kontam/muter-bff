@@ -1,5 +1,5 @@
 import React from 'react';
-import { connect } from 'react-redux';
+import { connect, useSelector } from 'react-redux';
 
 import { RootState } from '../../../../redux/reducers';
 
@@ -11,11 +11,10 @@ import SwitchSection from '../../auganisms/SwitchSection';
 import SNSAdSection from '../../auganisms/SNSAdSection';
 import PageFooter from '../../auganisms/PageFooter';
 
-interface AppicationTopProps {
-  basePath :string;
-}
+const basePathSelector = (state: RootState) => state.basePath;
 
-const ApplicationTop = ({ basePath }: AppicationTopProps) :JSX.Element => {
+const ApplicationTop = () :JSX.Element => {
+  const basePath = useSelector(basePathSelector);
 
   return (
     <>
@@ -32,8 +31,4 @@ const ApplicationTop = ({ basePath }: AppicationTopProps) :JSX.Element => {
   );
 };
 
-export default connect(
-  (state :RootState) => ({
-    basePath: state.basePath,
-  }),
-)(ApplicationTop);
+export default ApplicationTop;

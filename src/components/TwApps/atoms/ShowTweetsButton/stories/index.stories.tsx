@@ -5,7 +5,7 @@ import ShowTweetButtonComponent from '../index';
 import TwAppsConst from "../../../TwAppsConst";
 
 export default {
-  title: 'atoms/ShowTweetButton',
+  title: 'TwApps/atoms/ShowTweetButton',
   decorators: [withKnobs],
 }
 

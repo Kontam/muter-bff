@@ -18,7 +18,7 @@ module.exports = {
   ],
   globals: {
     'ts-jest': {
-      // storyshots用にbabelrcを読ませたかったが有効化するとimportが読めずにエラーになる
+      // babelにrequire.contextを読ませるためのpollyfillを含んでいる
       babelConfig: '.storybook/.babelrc',
       tsConfig: '<rootDir>/.jest/tsconfig.test.json',
       diagnostics: false,

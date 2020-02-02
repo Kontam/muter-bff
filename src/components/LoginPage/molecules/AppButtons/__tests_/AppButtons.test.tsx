@@ -2,15 +2,16 @@ import { shallow } from 'enzyme';
 import * as React from 'react';
 import assert from 'power-assert';
 
-import AppButtons, { List, MuterButton, BlockerButton } from '../AppButtons';
+import AppButtons, { List, MuterButton, BlockerButton } from '..';
 
-import { storeFactory, commonInitialState, adapter } from '../../../../modules/testUtils';
-import LoginConst from '../../LoginConst';
+import { storeFactory, commonInitialState, adapter } from '../../../../../modules/testUtils';
+import LoginConst from '../../../LoginConst';
+import TwAppsConst from '../../../../TwApps/TwAppsConst';
 adapter();
 
 describe('アプリ切り替えボタンのテスト項目',() => {
   const store = storeFactory(commonInitialState);
-  const wrapper = shallow(<AppButtons store={store} />).dive().dive();
+  const wrapper = shallow(<AppButtons appName={TwAppsConst.APPNAME_MUTER} />);
 
   const StyledList = wrapper.find(List);
   const StyledMuterButton = wrapper.find(MuterButton).parent();

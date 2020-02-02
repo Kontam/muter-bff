@@ -5,7 +5,7 @@ import TweetComponent from '../index';
 // import { Welcome } from '@storybook/react/demo';
 
 export default {
-  title: 'atoms/Tweet',
+  title: 'TwApps/atoms/Tweet',
   decorators: [withKnobs],
   component: TweetComponent,
   parameters :{

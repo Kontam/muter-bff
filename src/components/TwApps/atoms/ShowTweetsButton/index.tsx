@@ -8,7 +8,6 @@ import { mediaQ } from '../../../../modules/styles/media';
 const eye_icon = require('../../../../../img/eye_icon.svg');
 const hide_icon = require('../../../../../img/hide_icon.svg');
 
-
 export const createButton = (showTweets: ShowTweets) => {
   const bgColor = showTweets !== TwAppsConst.SHOW_TWEETS_OPENED
   ? theme.colors.showButtonColor : theme.colors.hideButtonColor;
@@ -58,7 +57,7 @@ const ShowTweetsButton = ({ showTweets, onClick }: ShowTweetsButtonProps) => {
     >
       <Icon />
       <LabelForPC>ツイートを</LabelForPC>
-      {showTweets === TwAppsConst.SHOW_TWEETS_CLOSED ? 'チラ見' : '隠す'}
+      {showTweets === TwAppsConst.SHOW_TWEETS_OPENED ? '隠す' : 'チラ見'}
     </Button>
   );
 };

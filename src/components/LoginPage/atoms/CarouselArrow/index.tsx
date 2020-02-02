@@ -16,21 +16,6 @@ type CarouselArrowProps = {
   className?: string
 };
 
-const CarouselArrow = ({
-  imgSrc,
-  onClick,
-  direction = LoginConst.ARROW_DIRECTION_LEFT,
-}: CarouselArrowProps) => {
-
-  return (
-    <Arrow data_js_slick={direction} onClick={onClick}>
-      <ArrowImg src={imgSrc} alt={direction} />
-    </Arrow>
-  );
-};
-
-export default CarouselArrow;
-
 const ArrowImg = styled.img`
   max-width: 50px;
 `;
@@ -70,3 +55,18 @@ const Arrow = styled(SlickArrow)<any>`
     z-index: ${({ theme } :MyThemeProps<{}>) => theme.z_index.ZI_carouselArrow}
   }
 `;
+
+const CarouselArrow = ({
+  imgSrc,
+  onClick,
+  direction = LoginConst.ARROW_DIRECTION_LEFT,
+}: CarouselArrowProps) => {
+
+  return (
+    <Arrow data_js_slick={direction} onClick={onClick}>
+      <ArrowImg src={imgSrc} alt={direction} />
+    </Arrow>
+  );
+};
+
+export default CarouselArrow;

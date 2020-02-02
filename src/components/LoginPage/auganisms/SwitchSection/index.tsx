@@ -1,20 +1,16 @@
 import React from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { RootState } from '../../../../redux/reducers';
 import StyleConst from '../../styles/define';
 import LoginConst from '../../LoginConst';
 import AppButtons from '../../molecules/AppButtons';
 
-interface PropsByState {
-  appName: string;
-}
-interface PropsByDispatch {
-}
-interface SwitchSectionProps extends PropsByState, PropsByDispatch{};
+const appNameSelector = (state: RootState) => state.appName;
 
-const SwitchSection = ({ appName } :SwitchSectionProps) :JSX.Element => {
+const SwitchSection = () :JSX.Element => {
+  const appName = useSelector(appNameSelector);
 
   const backgroundColor = appName === LoginConst.APPNAME_MUTER ?
     StyleConst.muterGreen : StyleConst.blockerBlue;
@@ -34,13 +30,11 @@ const SwitchSection = ({ appName } :SwitchSectionProps) :JSX.Element => {
   return (
     <Container>
       <Head>他のアプリもお試しください</Head>
-      <AppButtons />
+      <AppButtons
+        appName={appName}
+      />
     </Container>
   );
 };
 
-export default connect(
-  (state :RootState) :PropsByState => ({
-    appName: state.appName,
-  }),
-)(SwitchSection);
+export default SwitchSection;
