@@ -1,7 +1,6 @@
 import { configure, addDecorator,addParameters } from '@storybook/react';
 import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import requireContext from 'require-context.macro';
 
 import viewPorts from './viewports';
 import GlobalStyle from '../src/modules/styles/GlobalStyle';
