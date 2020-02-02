@@ -1,90 +1,130 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Storyshots atoms/ShowTweetButton Show Tweet Button 1`] = `
-<button
-  className="sc-kAzzGY cXiKGN"
-  onClick={[Function]}
-  type="button"
->
-  <div
-    className="sc-chPdSV bmunem"
-  />
-  <span
-    className="sc-bdVaJa iqELYr"
-  >
-    ツイートを
-  </span>
-  隠す
-</button>
-`;
-
-exports[`Storyshots atoms/ToggleMuteButton Toggle Mute Button 1`] = `
+exports[`Storyshots LoginPage/atoms/CarouselArrow Carousel Arrow Left 1`] = `
 <div
-  className="sc-bwzfXH fdfjv"
+  className="sc-htpNat hwrAWy"
 >
   <button
-    className="sc-bxivhb ebtCmX"
+    className="sc-bwzfXH isAFZs"
+    data-js-slick="left"
     onClick={[Function]}
   >
     <img
-      alt="close"
-      className="sc-htpNat kxuxEj menu-toggle-icon"
-      src="[object Object]"
+      alt="left"
+      className="sc-bdVaJa kklgoN"
+      src={Object {}}
     />
   </button>
 </div>
 `;
 
-exports[`Storyshots atoms/Tweet Tweet 1`] = `
+exports[`Storyshots LoginPage/atoms/CarouselArrow Carousel Arrow Right 1`] = `
 <div
-  className="sc-ifAKCX gWLgnJ"
+  className="sc-htpNat hwrAWy"
+>
+  <button
+    className="sc-bwzfXH jGUSLb"
+    data-js-slick="right"
+    onClick={[Function]}
+  >
+    <img
+      alt="right"
+      className="sc-bdVaJa kklgoN"
+      src={Object {}}
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
+<button
+  className="sc-iAyFgw igeRcE"
+  onClick={[Function]}
+  type="button"
+>
+  <div
+    className="sc-hSdWYo eKUoqu"
+  />
+  <span
+    className="sc-gzVnrw fWaMFq"
+  >
+    ツイートを
+  </span>
+  チラ見
+</button>
+`;
+
+exports[`Storyshots TwApps/atoms/ToggleMenuButton Toggle Mute Button 1`] = `
+<div
+  className="sc-gZMcBi fnvJrE"
+>
+  <div
+    className="sc-htoDjs deVqnZ"
+  >
+    <button
+      className="sc-iwsKbI kKUZMy"
+      onClick={[Function]}
+    >
+      <img
+        alt="close"
+        className="sc-dnqmqq fJDzFx menu-toggle-icon"
+        src="[object Object]"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Storyshots TwApps/atoms/Tweet Tweet 1`] = `
+<div
+  className="sc-gqjmRU bSmFDR"
 >
   <p
-    className="sc-EHOje hZOpMU"
+    className="sc-VigVT cDQkhW"
   >
     ツイートの本文が表示されます
   </p>
   <ul
-    className="sc-bZQynM leOXcm"
+    className="sc-jTzLTM fqQobq"
   />
   <div
-    className="sc-dnqmqq gmDCSZ"
+    className="sc-cSHVUG bFiudL"
   >
     <div
-      className="sc-iwsKbI faQlnH"
+      className="sc-kAzzGY etLLBi"
     >
       <div
-        className="sc-gqjmRU fHHRXg"
+        className="sc-kgoBCf eGNunK"
       />
       <p
-        className="sc-VigVT idPlxD"
+        className="sc-kGXeez esZsYw"
       >
         10
       </p>
     </div>
     <div
-      className="sc-iwsKbI faQlnH"
+      className="sc-kAzzGY etLLBi"
     >
       <div
-        className="sc-gZMcBi jjrhwH"
+        className="sc-chPdSV cLzXSw"
       />
       <p
-        className="sc-jTzLTM dqXnjO"
+        className="sc-kpOJdX ShvVx"
       >
         11
       </p>
     </div>
     <a
-      className="sc-fjdhpX eCzcuV open-twitter-link"
+      className="sc-dxgOiQ cwIdmR open-twitter-link"
       href="https://twitter.com/cha_han5656"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="sc-jzJRlG cDXLIU twitter-icon"
+        className="sc-ckVGcZ fstHcG twitter-icon"
       />
       <span
-        className="sc-cSHVUG eGgSxA pc-twitter-label"
+        className="sc-jKJlTe gxJxRD pc-twitter-label"
       >
         twitterで見る
       </span>
@@ -93,38 +133,60 @@ exports[`Storyshots atoms/Tweet Tweet 1`] = `
 </div>
 `;
 
-exports[`Storyshots atoms/UnmuteButton Mobile 1`] = `
+exports[`Storyshots TwApps/atoms/UnmuteButton Mobile 1`] = `
 Array [
   <h2>
     PCサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-ckVGcZ kgOYRS"
+    className="sc-cMljjf dFrCwX"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-dxgOiQ jYRhYK unmute-icon"
+      className="sc-brqgnP cMmPdW unmute-icon"
     />
     ミュート解除
   </button>,
 ]
 `;
 
-exports[`Storyshots atoms/UnmuteButton PC 1`] = `
+exports[`Storyshots TwApps/atoms/UnmuteButton PC 1`] = `
 Array [
   <h2>
     SPサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-kpOJdX fkmRkI"
+    className="sc-jWBwVP cOcRwl"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-kgoBCf hvPqrM mute-icon"
+      className="sc-eHgmQL gdVspV mute-icon"
     />
     ミュート
   </button>,
 ]
+`;
+
+exports[`Storyshots TwApps/molecules/FatalMessage Fatal Message 1`] = `
+<div
+  className="sc-eNQAEJ fvIEkS"
+>
+  <div
+    className="sc-hMqMXs iSHVjm"
+  >
+    <h2
+      className="sc-kEYyzF dhMbyz"
+    >
+      エラーが発生しました
+    </h2>
+    <a
+      className="sc-kkGfuU hOAbUp"
+      href="http://localhost:6006"
+    >
+      Topへ戻る
+    </a>
+  </div>
+</div>
 `;

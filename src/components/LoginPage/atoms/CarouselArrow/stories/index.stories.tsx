@@ -1,4 +1,5 @@
 import CarouselArrowComponent from '../';
+import React from 'react';
 import styled from 'styled-components';
 import { withKnobs } from '@storybook/addon-knobs';
 import LoginConst from '../../../LoginConst';
