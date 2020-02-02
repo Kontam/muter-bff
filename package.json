@@ -28,6 +28,7 @@
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
+    "@babel/polyfill": "^7.8.3",
     "@babel/preset-react": "^7.0.0",
     "@storybook/addon-actions": "^5.2.8",
     "@storybook/addon-docs": "^5.2.8",
@@ -72,6 +73,7 @@
     "power-assert": "^1.6.1",
     "puppeteer": "^2.0.0",
     "react-docgen-typescript-loader": "^3.6.0",
+    "react-hot-loader": "^4.12.19",
     "react-test-renderer": "^16.12.0",
     "redux-mock-store": "^1.5.4",
     "require-context.macro": "^1.2.2",
@@ -84,7 +86,6 @@
   },
   "dependencies": {
     "@types/enzyme": "^3.10.4",
-    "typescript": "^3.7.3",
     "@types/enzyme-adapter-react-16": "^1.0.5",
     "@types/express-session": "^1.15.16",
     "@types/jest": "^24.0.23",
@@ -126,7 +127,8 @@
     "redux-thunk": "^2.3.0",
     "storybook": "^5.1.11",
     "styled-components": "^4.4.0",
-    "styled-reset": "^4.0.8",
-    "ts-jest": "^24.2.0"
+    "styled-reset": "^4.1.0",
+    "ts-jest": "^24.2.0",
+    "typescript": "^3.7.3"
   }
 }

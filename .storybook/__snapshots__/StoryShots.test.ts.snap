@@ -1,0 +1,130 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Storyshots atoms/ShowTweetButton Show Tweet Button 1`] = `
+<button
+  className="sc-kAzzGY cXiKGN"
+  onClick={[Function]}
+  type="button"
+>
+  <div
+    className="sc-chPdSV bmunem"
+  />
+  <span
+    className="sc-bdVaJa iqELYr"
+  >
+    ツイートを
+  </span>
+  隠す
+</button>
+`;
+
+exports[`Storyshots atoms/ToggleMuteButton Toggle Mute Button 1`] = `
+<div
+  className="sc-bwzfXH fdfjv"
+>
+  <button
+    className="sc-bxivhb ebtCmX"
+    onClick={[Function]}
+  >
+    <img
+      alt="close"
+      className="sc-htpNat kxuxEj menu-toggle-icon"
+      src="[object Object]"
+    />
+  </button>
+</div>
+`;
+
+exports[`Storyshots atoms/Tweet Tweet 1`] = `
+<div
+  className="sc-ifAKCX gWLgnJ"
+>
+  <p
+    className="sc-EHOje hZOpMU"
+  >
+    ツイートの本文が表示されます
+  </p>
+  <ul
+    className="sc-bZQynM leOXcm"
+  />
+  <div
+    className="sc-dnqmqq gmDCSZ"
+  >
+    <div
+      className="sc-iwsKbI faQlnH"
+    >
+      <div
+        className="sc-gqjmRU fHHRXg"
+      />
+      <p
+        className="sc-VigVT idPlxD"
+      >
+        10
+      </p>
+    </div>
+    <div
+      className="sc-iwsKbI faQlnH"
+    >
+      <div
+        className="sc-gZMcBi jjrhwH"
+      />
+      <p
+        className="sc-jTzLTM dqXnjO"
+      >
+        11
+      </p>
+    </div>
+    <a
+      className="sc-fjdhpX eCzcuV open-twitter-link"
+      href="https://twitter.com/cha_han5656"
+      rel="noopener noreferrer"
+      target="_blank"
+    >
+      <div
+        className="sc-jzJRlG cDXLIU twitter-icon"
+      />
+      <span
+        className="sc-cSHVUG eGgSxA pc-twitter-label"
+      >
+        twitterで見る
+      </span>
+    </a>
+  </div>
+</div>
+`;
+
+exports[`Storyshots atoms/UnmuteButton Mobile 1`] = `
+Array [
+  <h2>
+    PCサイズでは何も表示されない
+  </h2>,
+  <button
+    className="sc-ckVGcZ kgOYRS"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="sc-dxgOiQ jYRhYK unmute-icon"
+    />
+    ミュート解除
+  </button>,
+]
+`;
+
+exports[`Storyshots atoms/UnmuteButton PC 1`] = `
+Array [
+  <h2>
+    SPサイズでは何も表示されない
+  </h2>,
+  <button
+    className="sc-kpOJdX fkmRkI"
+    onClick={[Function]}
+    type="button"
+  >
+    <div
+      className="sc-kgoBCf hvPqrM mute-icon"
+    />
+    ミュート
+  </button>,
+]
+`;

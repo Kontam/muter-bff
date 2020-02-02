@@ -1,7 +1,7 @@
 import React from "react";
 import { withKnobs, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import ShowTweetButtonComponent from '../index';
+import ShowTweetButtonComponent from '../';
 import TwAppsConst from "../../../TwAppsConst";
 
 export default {

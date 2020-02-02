@@ -4,7 +4,8 @@ module.exports = {
   testEnvironment: 'node',
   transform: {
     "^.+\\.svg$": "<rootDir>/svgTransform.js",
-    "^.+\\.(tsx|ts|js)?$": "ts-jest"
+    "^.+\\.(jsx|tsx|ts|js)?$": '<rootDir>/.jest/transform.ts',
+    // "^.+\\.(tsx|ts|js)?$": "ts-jest",
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.tsx?$",
   moduleFileExtensions: [
@@ -17,9 +18,12 @@ module.exports = {
   ],
   globals: {
     'ts-jest': {
-      tsConfig: 'tsconfig.test.json'
+      // storyshots用にbabelrcを読ませたかったが有効化するとimportが読めずにエラーになる
+      babelConfig: '.storybook/.babelrc',
+      tsConfig: 'tsconfig.test.json',
+      diagnostics: false,
     }
   },
   // StoryBook snapshotsテスト用
-  setupFiles: ['<rootDir>/.jest/register-context.js']
+  setupFiles: ['<rootDir>/.jest/register-context.ts']
 };
