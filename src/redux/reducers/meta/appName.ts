@@ -1,17 +1,18 @@
-import { Dispatch } from 'redux';
+import TwAppsConst from "../../../components/TwApps/TwAppsConst";
 
 export const SET_APPNAME = 'SET_APPNAME';
 
-interface appNameAction {
-  type :AppName;
-  payload: string;
+export type SetAppNameAction = {
+  type : typeof SET_APPNAME;
+  payload: AppName;
 }
 
-export type AppName = string
+export type AppName = typeof TwAppsConst.APPNAME_MUTER
+  | typeof TwAppsConst.APPNAME_BLOCKER;
 
-export const setAppName = (appName :AppName) => ({type: SET_APPNAME, payload: appName});
+export const setAppName = (appName :AppName): SetAppNameAction => ({type: SET_APPNAME, payload: appName});
 
-const appName = (state :AppName = "", action :appNameAction) => {
+const appName = (state :AppName = TwAppsConst.APPNAME_MUTER, action :SetAppNameAction) => {
   switch (action.type) {
     case SET_APPNAME:
       return action.payload;
