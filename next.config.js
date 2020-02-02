@@ -1,10 +1,10 @@
-require('dotenv').config()
+require('dotenv').config();
 
-const path = require('path');
-const withImages = require('next-images')
-const withSass = require('@zeit/next-sass')
+const withImages = require('next-images');
+const withSass = require('@zeit/next-sass');
 
-module.exports = withImages(withSass({
+module.exports = withImages(
+  withSass({
     cssModules: true,
     // distDir: 'dist/bff/next',
     env: {
@@ -19,17 +19,18 @@ module.exports = withImages(withSass({
       SESSION_SECRET: process.env.SESSION_SECRET,
       JWT_SECRET: process.env.JWT_SECRET,
     },
-    webpack: config => {
-      config.plugins = config.plugins || []
-      config.plugins = [
-        ...config.plugins,
-    ]
+    webpack: (config) => {
+      // eslint-disable-next-line no-param-reassign
+      config.plugins = config.plugins || [];
+      // eslint-disable-next-line no-param-reassign
+      config.plugins = [...config.plugins];
 
+      // eslint-disable-next-line no-param-reassign
       config.node = {
-        fs: 'empty'
-      }
+        fs: 'empty',
+      };
 
-      return config
-    }
-  })
-)
+      return config;
+    },
+  }),
+);

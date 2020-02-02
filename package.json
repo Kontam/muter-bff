@@ -24,7 +24,8 @@
     "lint-functions": "npx tslint --project src/bff",
     "build-app": "next build",
     "copy-deps": "npx cpx \"*{package.json,package-lock.json,npm run.lock}\" \"dist/bff\" -C",
-    "install-deps": "cd \"dist/bff\" && npm install"
+    "install-deps": "cd \"dist/bff\" && npm install",
+    "storyshots": "npx jest --config=.storybook/jest.config.storyshoots.js"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",
