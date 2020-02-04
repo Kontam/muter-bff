@@ -21,7 +21,7 @@ const Container = styled.div`
 
 // =============================================
 // slick-carouselを使用しているためstyled-component化できない部分がある
-// 後の課題として、ひとまずscssファイルとクラス名付きのjsxを残す
+// headタグの中でCDNでcssをロードしてスタイルを当てている
 // =============================================
 const Carousel = () => {
     return (

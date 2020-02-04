@@ -5,7 +5,7 @@ import TwAppsConst from '../../../../TwApps/TwAppsConst';
 
 // next/linkがreact-test-rendererでエラーになるのでstoryshotsから外している
 export default {
-    title: "TwApps/molecules/AppButtons-DontTest",
+    title: "LoginPage/molecules/AppButtons-DontTest",
     decorators: [withKnobs],
 }
 

@@ -11,7 +11,7 @@
     "start:nodemon": "nodemon",
     "puppeteer": "./node_modules/.bin/ts-node tests/Puppeteer/index.ts",
     "test": "npx jest && npm run storyshots",
-    "storybook": "start-storybook -p 6006",
+    "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook",
     "start": "npm run build:next && npm run start:fe",
     "storyshots": "npx jest --config=.storybook/jest.config.storyshoots.js"

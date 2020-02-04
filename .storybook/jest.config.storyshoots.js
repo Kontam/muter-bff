@@ -4,7 +4,7 @@ module.exports = {
   testEnvironment: 'node',
   rootDir: '../',
   transform: {
-    "^.+\\.svg$": "<rootDir>/.jest/svgTransform.js",
+    "^.+\\.(svg|jpg)$": "<rootDir>/.jest/svgTransform.js",
     "^.+\\.(jsx|tsx|ts|js)?$": '<rootDir>/.jest/transform.ts',
   },
   testRegex: "(/__tests__/.*|(\\.|/)(test|spec))\\.storyshots\\.ts$",

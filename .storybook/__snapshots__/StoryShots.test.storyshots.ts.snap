@@ -36,17 +36,27 @@ exports[`Storyshots LoginPage/atoms/CarouselArrow Carousel Arrow Right 1`] = `
 </div>
 `;
 
+exports[`Storyshots LoginPage/atoms/CarouselDot Show Tweet Button 1`] = `
+<div
+  className="sc-ifAKCX hprZSf"
+>
+  <div
+    className="sc-bxivhb gGDodJ"
+  />
+</div>
+`;
+
 exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 <button
-  className="sc-iAyFgw igeRcE"
+  className="sc-jDwBTQ eVOCAN"
   onClick={[Function]}
   type="button"
 >
   <div
-    className="sc-hSdWYo eKUoqu"
+    className="sc-gPEVay buPkoW"
   />
   <span
-    className="sc-gzVnrw fWaMFq"
+    className="sc-fjdhpX djRQxi"
   >
     ツイートを
   </span>
@@ -56,18 +66,18 @@ exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 
 exports[`Storyshots TwApps/atoms/ToggleMenuButton Toggle Mute Button 1`] = `
 <div
-  className="sc-gZMcBi fnvJrE"
+  className="sc-chPdSV lohzHM"
 >
   <div
-    className="sc-htoDjs deVqnZ"
+    className="sc-jzJRlG igHjlL"
   >
     <button
-      className="sc-iwsKbI kKUZMy"
+      className="sc-kAzzGY lKgcl"
       onClick={[Function]}
     >
       <img
         alt="close"
-        className="sc-dnqmqq fJDzFx menu-toggle-icon"
+        className="sc-cSHVUG wiHOK menu-toggle-icon"
         src="[object Object]"
       />
     </button>
@@ -77,54 +87,54 @@ exports[`Storyshots TwApps/atoms/ToggleMenuButton Toggle Mute Button 1`] = `
 
 exports[`Storyshots TwApps/atoms/Tweet Tweet 1`] = `
 <div
-  className="sc-gqjmRU bSmFDR"
+  className="sc-kgoBCf drDsP"
 >
   <p
-    className="sc-VigVT cDQkhW"
+    className="sc-kGXeez gZQnUg"
   >
     ツイートの本文が表示されます
   </p>
   <ul
-    className="sc-jTzLTM fqQobq"
+    className="sc-kpOJdX fhvrAA"
   />
   <div
-    className="sc-cSHVUG bFiudL"
+    className="sc-jKJlTe fjOZbF"
   >
     <div
-      className="sc-kAzzGY etLLBi"
+      className="sc-eNQAEJ eohzHb"
     >
       <div
-        className="sc-kgoBCf eGNunK"
+        className="sc-kEYyzF eFCdiO"
       />
       <p
-        className="sc-kGXeez esZsYw"
+        className="sc-kkGfuU fkTVNp"
       >
         10
       </p>
     </div>
     <div
-      className="sc-kAzzGY etLLBi"
+      className="sc-eNQAEJ eohzHb"
     >
       <div
-        className="sc-chPdSV cLzXSw"
+        className="sc-hMqMXs jZrvgm"
       />
       <p
-        className="sc-kpOJdX ShvVx"
+        className="sc-iAyFgw XoAaD"
       >
         11
       </p>
     </div>
     <a
-      className="sc-dxgOiQ cwIdmR open-twitter-link"
+      className="sc-hSdWYo bkycbS open-twitter-link"
       href="https://twitter.com/cha_han5656"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="sc-ckVGcZ fstHcG twitter-icon"
+        className="sc-eHgmQL fMQifb twitter-icon"
       />
       <span
-        className="sc-jKJlTe gxJxRD pc-twitter-label"
+        className="sc-cvbbAY dYXmYz pc-twitter-label"
       >
         twitterで見る
       </span>
@@ -139,12 +149,12 @@ Array [
     PCサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-cMljjf dFrCwX"
+    className="sc-Rmtcm hQDmRc"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-brqgnP cMmPdW unmute-icon"
+      className="sc-csuQGl gRNeUw unmute-icon"
     />
     ミュート解除
   </button>,
@@ -157,12 +167,12 @@ Array [
     SPサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-jWBwVP cOcRwl"
+    className="sc-gipzik cpUytR"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-eHgmQL gdVspV mute-icon"
+      className="sc-iRbamj CXoaV mute-icon"
     />
     ミュート
   </button>,
@@ -171,18 +181,18 @@ Array [
 
 exports[`Storyshots TwApps/molecules/FatalMessage Fatal Message 1`] = `
 <div
-  className="sc-eNQAEJ fvIEkS"
+  className="sc-jWBwVP eNMzVg"
 >
   <div
-    className="sc-hMqMXs iSHVjm"
+    className="sc-brqgnP ffhkeY"
   >
     <h2
-      className="sc-kEYyzF dhMbyz"
+      className="sc-cMljjf hTOdsW"
     >
       エラーが発生しました
     </h2>
     <a
-      className="sc-kkGfuU hOAbUp"
+      className="sc-jAaTju gQPISw"
       href="http://localhost:6006"
     >
       Topへ戻る

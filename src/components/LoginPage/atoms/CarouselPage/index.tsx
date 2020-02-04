@@ -13,12 +13,10 @@ const CarouselPage:React.FC<CarouselPageProps> = ({carouselInfo} :CarouselPagePr
     <Img
       src={carouselInfo.src}
       alt={carouselInfo.alt}
-      className="loginCarousel__slideImg"
     />
   </div>
 );
 
-CarouselPage.displayName = "CarouselPage";
 
 export default CarouselPage;
 
