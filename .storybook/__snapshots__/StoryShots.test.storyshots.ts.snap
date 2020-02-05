@@ -48,15 +48,15 @@ exports[`Storyshots LoginPage/atoms/CarouselDot Show Tweet Button 1`] = `
 
 exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 <button
-  className="sc-jDwBTQ eVOCAN"
+  className="sc-jAaTju ikXDTW"
   onClick={[Function]}
   type="button"
 >
   <div
-    className="sc-gPEVay buPkoW"
+    className="sc-jDwBTQ fSAsSb"
   />
   <span
-    className="sc-fjdhpX djRQxi"
+    className="sc-jTzLTM izpxaH"
   >
     ツイートを
   </span>
@@ -66,18 +66,18 @@ exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 
 exports[`Storyshots TwApps/atoms/ToggleMenuButton Toggle Mute Button 1`] = `
 <div
-  className="sc-chPdSV lohzHM"
+  className="sc-kAzzGY jMjvEQ"
 >
   <div
-    className="sc-jzJRlG igHjlL"
+    className="sc-fjdhpX dKWwgc"
   >
     <button
-      className="sc-kAzzGY lKgcl"
+      className="sc-cSHVUG bhxyBA"
       onClick={[Function]}
     >
       <img
         alt="close"
-        className="sc-cSHVUG wiHOK menu-toggle-icon"
+        className="sc-jzJRlG ikrnlm menu-toggle-icon"
         src="[object Object]"
       />
     </button>
@@ -87,54 +87,54 @@ exports[`Storyshots TwApps/atoms/ToggleMenuButton Toggle Mute Button 1`] = `
 
 exports[`Storyshots TwApps/atoms/Tweet Tweet 1`] = `
 <div
-  className="sc-kgoBCf drDsP"
+  className="sc-chPdSV RZrGb"
 >
   <p
-    className="sc-kGXeez gZQnUg"
+    className="sc-kgoBCf eKLFlP"
   >
     ツイートの本文が表示されます
   </p>
   <ul
-    className="sc-kpOJdX fhvrAA"
+    className="sc-kGXeez fxkIlE"
   />
   <div
-    className="sc-jKJlTe fjOZbF"
+    className="sc-ckVGcZ bBDcYB"
   >
     <div
-      className="sc-eNQAEJ eohzHb"
+      className="sc-jKJlTe dPCXzM"
     >
       <div
-        className="sc-kEYyzF eFCdiO"
+        className="sc-hMqMXs bzaPGE"
       />
       <p
-        className="sc-kkGfuU fkTVNp"
+        className="sc-kEYyzF gplWHF"
       >
         10
       </p>
     </div>
     <div
-      className="sc-eNQAEJ eohzHb"
+      className="sc-jKJlTe dPCXzM"
     >
       <div
-        className="sc-hMqMXs jZrvgm"
+        className="sc-eNQAEJ gDkQlq"
       />
       <p
-        className="sc-iAyFgw XoAaD"
+        className="sc-kkGfuU bMdBUi"
       >
         11
       </p>
     </div>
     <a
-      className="sc-hSdWYo bkycbS open-twitter-link"
+      className="sc-iAyFgw kHuthd open-twitter-link"
       href="https://twitter.com/cha_han5656"
       rel="noopener noreferrer"
       target="_blank"
     >
       <div
-        className="sc-eHgmQL fMQifb twitter-icon"
+        className="sc-hSdWYo eHhjMN twitter-icon"
       />
       <span
-        className="sc-cvbbAY dYXmYz pc-twitter-label"
+        className="sc-eHgmQL ikwqBM pc-twitter-label"
       >
         twitterで見る
       </span>
@@ -149,12 +149,12 @@ Array [
     PCサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-Rmtcm hQDmRc"
+    className="sc-csuQGl loFxpu"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-csuQGl gRNeUw unmute-icon"
+      className="sc-gipzik bVdXAw unmute-icon"
     />
     ミュート解除
   </button>,
@@ -167,12 +167,12 @@ Array [
     SPサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-gipzik cpUytR"
+    className="sc-jlyJG giQEqx"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-iRbamj CXoaV mute-icon"
+      className="sc-gPEVay fgngZX mute-icon"
     />
     ミュート
   </button>,
@@ -181,18 +181,18 @@ Array [
 
 exports[`Storyshots TwApps/molecules/FatalMessage Fatal Message 1`] = `
 <div
-  className="sc-jWBwVP eNMzVg"
+  className="sc-cvbbAY jigcOE"
 >
   <div
-    className="sc-brqgnP ffhkeY"
+    className="sc-jWBwVP docuPj"
   >
     <h2
-      className="sc-cMljjf hTOdsW"
+      className="sc-brqgnP djSacn"
     >
       エラーが発生しました
     </h2>
     <a
-      className="sc-jAaTju gQPISw"
+      className="sc-cMljjf dTRkEh"
       href="http://localhost:6006"
     >
       Topへ戻る

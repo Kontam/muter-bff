@@ -1,15 +1,15 @@
 import { shallow,mount } from 'enzyme';
 import * as React from 'react';
-import LoginButton, { LoginLink, TwitterIcon } from '../LoginButton';
-import LoginConst from '../../LoginConst';
-import { storeFactory, commonInitialState, adapter } from '../../../../modules/testUtils';
+import LoginButton, { LoginLink, TwitterIcon } from '..';
+import LoginConst from '../../../LoginConst';
+import { adapter } from '../../../../../modules/testUtils';
 adapter();
 
 const buttonLabel = "ログイン";
-const store = storeFactory(commonInitialState);
+const mockBasePath = "http://test.com";
 
 describe("ログイン用ボタンのテスト", () => {
-  const wrapper = shallow(<LoginButton store={store}/>).dive().dive();
+  const wrapper = shallow(<LoginButton href={mockBasePath}/>);
   const Link = wrapper.find(LoginLink);
 
   test("アイコンとラベルを含んだボタンが描画されている", () => {
@@ -20,6 +20,6 @@ describe("ログイン用ボタンのテスト", () => {
 
   test("ボタンのリンク先がステートに応じてセットされている", () => {
     const linkProps :any = Link.props();
-    expect(linkProps.href).toEqual(commonInitialState.basePath + LoginConst.LOGIN_SLAG);
+    expect(linkProps.href).toEqual(mockBasePath);
   });
 });

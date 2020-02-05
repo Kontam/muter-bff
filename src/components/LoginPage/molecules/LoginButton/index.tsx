@@ -1,25 +1,18 @@
 import * as React from 'react';
-import { connect } from 'react-redux'
 import styled from 'styled-components';
-import { RootState } from '../../../../redux/reducers';
 
-import LoginConst from '../../LoginConst';
 import StyleConst, { resetAnchor } from '../../styles/define';
 import { mediaQ } from '../../../../modules/styles/media';
 const whiteTwitterIcon = require('../../../../../img/twitter_white_icon.svg')
 
-// interface StateByProps {
-//   basePath: string,
-// }
-
 type LoginButtonProps = {
-  basePath: string,
+  href: string,
   store?: any,
 }
 
-const LoginButton = ({ basePath } :LoginButtonProps):JSX.Element => {
+const LoginButton = ({ href } :LoginButtonProps):JSX.Element => {
   return (
-    <LoginLink href={`${basePath}${LoginConst.LOGIN_SLAG}`}>
+    <LoginLink href={href}>
       ログイン
       <TwitterIcon src={whiteTwitterIcon} alt="twitter" />
     </LoginLink>
@@ -53,9 +46,8 @@ export const LoginLink = styled.a`
 
 export const TwitterIcon = styled.img`
     margin-left: 15px;
+
     width: 40px;
 `;
 
-export default connect(
-  (state :RootState) => ({ basePath: state.basePath, }),
-  {})(LoginButton);
+export default LoginButton;

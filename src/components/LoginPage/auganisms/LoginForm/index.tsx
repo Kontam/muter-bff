@@ -1,4 +1,5 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import styled from 'styled-components';
 
 import { mediaQ } from '../../../../modules/styles/media';
@@ -6,17 +7,22 @@ import StyleConst from '../../styles/define';
 import LoginConst from '../../LoginConst';
 import LoginButton from '../../molecules/LoginButton';
 import OwnerLink from '../../molecules/OwnerLink';
+import { RootState } from '../../../../redux/reducers';
 
+const basePathSelector = (state: RootState) => state.basePath;
 
-const LoginForm = () => (
-  <>
-    <OwnerLink />
-    <LoginContainer>
-      <LoginButton />
-      <LoginDescription>{LoginConst.DESCRIPTION_LOGIN_TWITTER}</LoginDescription>
-    </LoginContainer>
-  </>
-);
+const LoginForm = () => {
+  const basePath = useSelector(basePathSelector);
+  return(
+    <>
+      <OwnerLink />
+      <LoginContainer>
+        <LoginButton href={basePath + LoginConst.LOGIN_SLAG}/>
+        <LoginDescription>{LoginConst.DESCRIPTION_LOGIN_TWITTER}</LoginDescription>
+      </LoginContainer>
+    </>
+  )
+};
 
 const LoginContainer = styled.div`
   background-color: ${StyleConst.muterGreen};

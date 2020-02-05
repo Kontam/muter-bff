@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
+import React from 'react';
 import styled from 'styled-components';
 //@ts-ignore
 import Slider from 'react-slick';
 
 import CarouselPage from '../../atoms/CarouselPage';
-import CarouselArrows from '../../molecules/CrouselArrows';
 import StyleConst from '../../styles/define';
 
 import { CarouselInfo, carouselInfos, slickConfig } from './Carousel';
@@ -31,7 +30,6 @@ const Carousel = () => {
             <CarouselPage carouselInfo={carouselInfo} key={index} />
           )}
         </Slider>
-        <CarouselArrows />
       </Container>
     );
 }
