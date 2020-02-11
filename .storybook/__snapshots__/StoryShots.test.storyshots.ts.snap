@@ -46,14 +46,148 @@ exports[`Storyshots LoginPage/atoms/CarouselDot Show Tweet Button 1`] = `
 </div>
 `;
 
+exports[`Storyshots LoginPage/molecules/ListedUser Listed User 1`] = `
+<li
+  className="sc-gipzik kHoOKC"
+>
+  <div
+    className="sc-gisBJw fcDcPP"
+  >
+    <img
+      alt="icon"
+      className="sc-Rmtcm cHQIgs"
+      src="https://pbs.twimg.com/profile_images/1166011350981545990/VRiZCTi8.jpg"
+    />
+    <div
+      className="sc-bRBYWo hitMDu"
+    >
+      <p
+        className="sc-hzDkRC ddyDQe"
+      >
+        くらら太郎
+      </p>
+      <p
+        className="sc-hzDkRC ddyDQe"
+      >
+        @
+        culalaTP
+      </p>
+    </div>
+    <button
+      className="sc-TOsTZ cPCsxY"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="sc-kjoXOD ddgldC unmute-icon"
+      />
+      ミュート解除
+    </button>
+  </div>
+  <ul
+    className="sc-jlyJG cbQYIm"
+  >
+    <li
+      className="sc-iRbamj blSEcj"
+    >
+      <div
+        className="sc-chPdSV RZrGb"
+      >
+        <p
+          className="sc-kgoBCf eKLFlP"
+        >
+          私が日光アレルギー無くて男だったら絶対海軍入ってた
+潜水艦乗りたかった
+        </p>
+        <ul
+          className="sc-kGXeez fxkIlE"
+        />
+        <div
+          className="sc-ckVGcZ bBDcYB"
+        >
+          <div
+            className="sc-jKJlTe dPCXzM"
+          >
+            <div
+              className="sc-hMqMXs bzaPGE"
+            />
+            <p
+              className="sc-kEYyzF gplWHF"
+            >
+              2
+            </p>
+          </div>
+          <div
+            className="sc-jKJlTe dPCXzM"
+          >
+            <div
+              className="sc-eNQAEJ gDkQlq"
+            />
+            <p
+              className="sc-kkGfuU bMdBUi"
+            >
+              0
+            </p>
+          </div>
+          <a
+            className="sc-iAyFgw kHuthd open-twitter-link"
+            href="https://twitter.com/culalaTP/status/1227046563693772801"
+            rel="noopener noreferrer"
+            target="_blank"
+          >
+            <div
+              className="sc-hSdWYo eHhjMN twitter-icon"
+            />
+            <span
+              className="sc-eHgmQL ikwqBM pc-twitter-label"
+            >
+              twitterで見る
+            </span>
+          </a>
+        </div>
+      </div>
+    </li>
+  </ul>
+  <div
+    className="sc-csuQGl itauGB"
+  >
+    <button
+      className="sc-cJSrbW gZlJVm"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="sc-kgAjT iHVWss unmute-icon"
+      />
+      ミュート解除
+    </button>
+    <button
+      className="sc-ksYbfQ ikxKjZ"
+      onClick={[Function]}
+      type="button"
+    >
+      <div
+        className="sc-hmzhuo kqczFY"
+      />
+      <span
+        className="sc-jTzLTM izpxaH"
+      >
+        ツイートを
+      </span>
+      チラ見
+    </button>
+  </div>
+</li>
+`;
+
 exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 <button
-  className="sc-jAaTju ikXDTW"
+  className="sc-jhAzac iwZtPE"
   onClick={[Function]}
   type="button"
 >
   <div
-    className="sc-jDwBTQ fSAsSb"
+    className="sc-fBuWsC iEaIEj"
   />
   <span
     className="sc-jTzLTM izpxaH"
@@ -149,12 +283,12 @@ Array [
     PCサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-csuQGl loFxpu"
+    className="sc-caSCKo bHDjQK"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-gipzik bVdXAw unmute-icon"
+      className="sc-fAjcbJ hLURJS unmute-icon"
     />
     ミュート解除
   </button>,
@@ -167,12 +301,12 @@ Array [
     SPサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-jlyJG giQEqx"
+    className="sc-eqIVtm hZUhDt"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-gPEVay fgngZX mute-icon"
+      className="sc-fMiknA cxJvHa mute-icon"
     />
     ミュート
   </button>,
@@ -198,5 +332,23 @@ exports[`Storyshots TwApps/molecules/FatalMessage Fatal Message 1`] = `
       Topへ戻る
     </a>
   </div>
+</div>
+`;
+
+exports[`Storyshots TwApps/molecules/FrontDisplayContainer Front Display Container 1`] = `
+<div
+  className="sc-jAaTju hLObMU"
+  style={Object {}}
+>
+  <img
+    alt="loading"
+    className="sc-jDwBTQ gMHniA"
+    src={Object {}}
+  />
+  <p
+    className="sc-gPEVay grdSlS"
+  >
+    loading...
+  </p>
 </div>
 `;
