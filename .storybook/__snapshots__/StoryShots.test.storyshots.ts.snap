@@ -51,7 +51,7 @@ exports[`Storyshots LoginPage/molecules/ListedUser Listed User 1`] = `
   className="sc-gipzik kHoOKC"
 >
   <div
-    className="sc-gisBJw fcDcPP"
+    className="sc-cHGsZl hVexUn"
   >
     <img
       alt="icon"
@@ -74,12 +74,12 @@ exports[`Storyshots LoginPage/molecules/ListedUser Listed User 1`] = `
       </p>
     </div>
     <button
-      className="sc-TOsTZ cPCsxY"
+      className="sc-cJSrbW ieIBNc"
       onClick={[Function]}
       type="button"
     >
       <div
-        className="sc-kjoXOD ddgldC unmute-icon"
+        className="sc-TOsTZ jhQtRr unmute-icon"
       />
       ミュート解除
     </button>
@@ -152,22 +152,22 @@ exports[`Storyshots LoginPage/molecules/ListedUser Listed User 1`] = `
     className="sc-csuQGl itauGB"
   >
     <button
-      className="sc-cJSrbW gZlJVm"
+      className="sc-hmzhuo kNzAGV"
       onClick={[Function]}
       type="button"
     >
       <div
-        className="sc-kgAjT iHVWss unmute-icon"
+        className="sc-ksYbfQ wzUfq unmute-icon"
       />
       ミュート解除
     </button>
     <button
-      className="sc-ksYbfQ ikxKjZ"
+      className="sc-frDJqD paIza"
       onClick={[Function]}
       type="button"
     >
       <div
-        className="sc-hmzhuo kqczFY"
+        className="sc-kvZOFW jVeurt"
       />
       <span
         className="sc-jTzLTM izpxaH"
@@ -182,12 +182,12 @@ exports[`Storyshots LoginPage/molecules/ListedUser Listed User 1`] = `
 
 exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 <button
-  className="sc-jhAzac iwZtPE"
+  className="sc-fMiknA cROlZK"
   onClick={[Function]}
   type="button"
 >
   <div
-    className="sc-fBuWsC iEaIEj"
+    className="sc-dVhcbM ewVUSN"
   />
   <span
     className="sc-jTzLTM izpxaH"
@@ -283,12 +283,12 @@ Array [
     PCサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-caSCKo bHDjQK"
+    className="sc-kjoXOD hmLJIQ"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-fAjcbJ hLURJS unmute-icon"
+      className="sc-gisBJw lXXHF unmute-icon"
     />
     ミュート解除
   </button>,
@@ -301,12 +301,12 @@ Array [
     SPサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-eqIVtm hZUhDt"
+    className="sc-caSCKo jorOqG"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-fMiknA cxJvHa mute-icon"
+      className="sc-eqIVtm loOxwN mute-icon"
     />
     ミュート
   </button>,
@@ -350,5 +350,35 @@ exports[`Storyshots TwApps/molecules/FrontDisplayContainer Front Display Contain
   >
     loading...
   </p>
+</div>
+`;
+
+exports[`Storyshots TwApps/molecules/MuterMenu Muter Menu 1`] = `
+<div
+  className="sc-jhAzac foyByv"
+>
+  <div
+    className="sc-fjdhpX dKWwgc"
+  >
+    <button
+      className="sc-cSHVUG bhxyBA"
+      onClick={[Function]}
+    >
+      <img
+        alt="close"
+        className="sc-jzJRlG ikrnlm menu-toggle-icon"
+        src="[object Object]"
+      />
+    </button>
+  </div>
+  <button
+    className="sc-fBuWsC fizzvv"
+  >
+    <span
+      className="tweets-count"
+    >
+      3
+    </span>
+  </button>
 </div>
 `;
