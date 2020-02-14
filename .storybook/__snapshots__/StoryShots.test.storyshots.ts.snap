@@ -48,12 +48,12 @@ exports[`Storyshots LoginPage/atoms/CarouselDot Show Tweet Button 1`] = `
 
 exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 <button
-  className="sc-eqIVtm hBUEcv"
+  className="sc-caSCKo jCRLSt"
   onClick={[Function]}
   type="button"
 >
   <div
-    className="sc-fAjcbJ bXEoqE"
+    className="sc-gisBJw iJoGXp"
   />
   <span
     className="sc-jTzLTM izpxaH"
@@ -149,12 +149,12 @@ Array [
     PCサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-TOsTZ fEpjgZ"
+    className="sc-cJSrbW gZlJVm"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-cHGsZl hQNcZo unmute-icon"
+      className="sc-kgAjT iHVWss unmute-icon"
     />
     ミュート解除
   </button>,
@@ -167,12 +167,12 @@ Array [
     SPサイズでは何も表示されない
   </h2>,
   <button
-    className="sc-kjoXOD dXeswZ"
+    className="sc-TOsTZ iLsaRe"
     onClick={[Function]}
     type="button"
   >
     <div
-      className="sc-caSCKo iKGLUY mute-icon"
+      className="sc-kjoXOD ddgldC mute-icon"
     />
     ミュート
   </button>,
@@ -224,7 +224,7 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
   className="sc-gipzik kHoOKC"
 >
   <div
-    className="sc-kgAjT gJitTp"
+    className="sc-ksYbfQ kSTJoF"
   >
     <img
       alt="icon"
@@ -247,12 +247,12 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
       </p>
     </div>
     <button
-      className="sc-hmzhuo dUEjdS"
+      className="sc-kvZOFW lpaVtS"
       onClick={[Function]}
       type="button"
     >
       <div
-        className="sc-cJSrbW cBOmYB unmute-icon"
+        className="sc-hmzhuo gQEyUN unmute-icon"
       />
       ミュート解除
     </button>
@@ -325,22 +325,22 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
     className="sc-csuQGl itauGB"
   >
     <button
-      className="sc-kvZOFW hDmPlI"
+      className="sc-jbKcbu cyXMbz"
       onClick={[Function]}
       type="button"
     >
       <div
-        className="sc-frDJqD cyyUKA unmute-icon"
+        className="sc-hqyNC joPxxB unmute-icon"
       />
       ミュート解除
     </button>
     <button
-      className="sc-hqyNC krOPNh"
+      className="sc-dNLxif bEQnLd"
       onClick={[Function]}
       type="button"
     >
       <div
-        className="sc-jbKcbu cbhYFv"
+        className="sc-jqCOkK hloEgk"
       />
       <span
         className="sc-jTzLTM izpxaH"
@@ -523,7 +523,7 @@ Array [
       className="sc-gipzik kHoOKC"
     >
       <div
-        className="sc-dNLxif mGPIM"
+        className="sc-uJMKN cLqoWz"
       >
         <img
           alt="icon"
@@ -546,12 +546,12 @@ Array [
           </p>
         </div>
         <button
-          className="sc-bbmXgH ieHWoD"
+          className="sc-jnlKLf hyQzfV"
           onClick={[Function]}
           type="button"
         >
           <div
-            className="sc-jqCOkK gIwPnr unmute-icon"
+            className="sc-bbmXgH cIGXEi unmute-icon"
           />
           ミュート解除
         </button>
@@ -683,22 +683,22 @@ Array [
         className="sc-csuQGl itauGB"
       >
         <button
-          className="sc-jnlKLf bQoOeO"
+          className="sc-tilXH VdVzC"
           onClick={[Function]}
           type="button"
         >
           <div
-            className="sc-gGBfsJ fvdGde unmute-icon"
+            className="sc-fYxtnH ZauVy unmute-icon"
           />
           ミュート解除
         </button>
         <button
-          className="sc-fYxtnH iaNjft"
+          className="sc-hEsumM cNlKWd"
           onClick={[Function]}
           type="button"
         >
           <div
-            className="sc-tilXH MBCrC"
+            className="sc-ktHwxA guyXOf"
           />
           <span
             className="sc-jTzLTM izpxaH"
@@ -711,4 +711,16 @@ Array [
     </li>
   </ul>,
 ]
+`;
+
+exports[`Storyshots TwApps/organisms/TwAppsHeader Tw Apps Header 1`] = `
+<header
+  className="sc-fAjcbJ fYbnUC"
+>
+  <img
+    alt="icon"
+    className="sc-eqIVtm cZgujS"
+    src="https://pbs.twimg.com/profile_images/1058576678081851392/LdKwoFXJ.jpg"
+  />
+</header>
 `;
