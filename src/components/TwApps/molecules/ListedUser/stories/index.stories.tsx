@@ -9,7 +9,7 @@ import { action } from "@storybook/addon-actions";
 
 // next/linkがreact-test-rendererでエラーになるのでstoryshotsから外している
 export default {
-  title: "LoginPage/molecules/ListedUser",
+  title: "TwApps/molecules/ListedUser",
   decorators: [withKnobs]
 };
 
