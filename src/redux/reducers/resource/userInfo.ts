@@ -11,7 +11,7 @@ export type UserInfo = {
   user_name: string
   screen_name: string
   profile_image_url_https: string
-} | {};
+};
 
 export type UserInfoAction = {
   type: typeof ACTION_CHANGE_USER_INFO,
@@ -27,7 +27,7 @@ export const requestUserInfo = (
     .then((result) => {
       if (typeof result === "undefined") return console.error("UserInfo Response Error", result);
       const { data } = result;
-      const userInfo: UserInfo = data;
+      const userInfo: UserInfo | ErrInfo[] = data;
       if (Array.isArray(data) && 'code' in data[0]) {
         dispatch(setErrMessage(data[0].message));
         dispatch(endUserRequest());
