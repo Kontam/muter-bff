@@ -28,9 +28,8 @@ exports.login_check = async function(req :Request, res: Response) {
     }
 
     const params = { user_id };
-    const responce = await execRequest(BffConst.API_CHECK_LOGIN_API,{ params });
+    const responce = await execRequest<AuthInfo>(BffConst.API_CHECK_LOGIN_API,{ params });
     const authInfo: AuthInfo = responce.data;
-
     if (authInfo.token) {
       const passportSession = { user: {
         twitter_token: authInfo.token,

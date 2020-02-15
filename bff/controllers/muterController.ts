@@ -3,7 +3,6 @@ import BffConst from '../const';
 
 import execRequest from '../modules/execRequest';
 import { createParamsWithToken } from '../modules/createParams';
-import { exec } from 'child_process';
 
 export type MutedUserInfo = {
   user_id: string,
@@ -34,6 +33,10 @@ export type MutedUsersAPIResource = {
   tweets_info: TweetInfo[],
 }
 
+export type MuteAPIResponce = {
+  screen_name: string;
+}
+
 /**
  * ミュートユーザー一覧を取得するAPI
  * @param {string} user_id DBにログを保存するためのキー
@@ -46,7 +49,7 @@ exports.muter_muted_users = async function(req :Request,res: Response) {
   if (req.session) {
     params = createParamsWithToken(req.session, extraParams);
   }
-  const response = await execRequest(BffConst.API_MUTED_LIST_SLUG, { params });
+  const response = await execRequest<MutedUsersAPIResource>(BffConst.API_MUTED_LIST_SLUG, { params });
   res.send(response.data);
 }
 
@@ -61,7 +64,7 @@ exports.muter_unmute_user = async function(req: Request, res: Response, next: Ne
     params = createParamsWithToken(req.session, extraParams);
   }
   const endPoint = BffConst.API_UNMUTE_USER_SLUG + `/${req.params.screen_name || ''}`;
-  const response = await execRequest(endPoint, { params });
+  const response = await execRequest<MuteAPIResponce>(endPoint, { params });
   res.send(response.data);
 }
 
@@ -76,6 +79,6 @@ exports.muter_mute_user = async function(req: Request, res: Response, next: Next
     params = createParamsWithToken(req.session, extraParams);
   }
   const endPoint = BffConst.API_MUTE_USER_SLUG + `/${req.params.screen_name || ''}`;
-  const response = await execRequest(endPoint, { params });
+  const response = await execRequest<MuteAPIResponce>(endPoint, { params });
   res.send(response.data);
 }

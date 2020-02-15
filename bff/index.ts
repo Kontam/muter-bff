@@ -4,7 +4,7 @@ const next = require("next");
 const http = require("http");
 const cookieParser = require("cookie-parser");
 const session = require("express-session");
-const port :any = parseInt(process.env.PORT as string, 10) || 5000;
+const port :any = process.env.PORT || 5000;
 const dev = process.env.NODE_ENV !== "production";
 const nextApp = next({ dev });
 const handle = nextApp.getRequestHandler();
