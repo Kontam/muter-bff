@@ -77,6 +77,7 @@ class SNSLinkButton extends Component {
       <this.styledComponent
         type="button"
         onClick={() => { this.handleClick(); }}
+        data-e2e-id={`SNSLinkButton-${this.sns_name}`}
       >
         {this.text}
       </this.styledComponent>

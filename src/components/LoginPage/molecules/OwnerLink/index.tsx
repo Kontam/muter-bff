@@ -1,15 +1,22 @@
-import React from 'react';
-import styled,{ css } from 'styled-components';
+import React from "react";
+import styled, { css } from "styled-components";
 
-import StyleConst, { resetAnchor } from '../../styles/define';
-import LoginConst from '../../LoginConst';
-const houseIcon = require('../../../../../img/house_icon.svg');
+import StyleConst, { resetAnchor } from "../../styles/define";
+import LoginConst from "../../LoginConst";
+const houseIcon = require("../../../../../img/house_icon.svg");
 
 const OwnerLink = () => (
   <OwnerLinkText>
-      <OwnerIcon src={houseIcon} alt="home" />
-      <Anchor href={LoginConst.OWNER_LINK} target="_blank" rel="noopener noreferrer">制作者ホームページ</Anchor>
-    </OwnerLinkText>
+    <OwnerIcon src={houseIcon} alt="home" />
+    <Anchor
+      href={LoginConst.OWNER_LINK}
+      target="_blank"
+      rel="noopener noreferrer"
+      data-e2e-id="OwnerLink"
+    >
+      制作者ホームページ
+    </Anchor>
+  </OwnerLinkText>
 );
 
 /**
@@ -34,6 +41,5 @@ const Anchor = styled.a`
   font-size: 0.66rem;
   vertical-align: 1px;
 `;
-
 
 export default OwnerLink;

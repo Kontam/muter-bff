@@ -12,7 +12,7 @@ type LoginButtonProps = {
 
 const LoginButton = ({ href } :LoginButtonProps):JSX.Element => {
   return (
-    <LoginLink href={href}>
+    <LoginLink href={href} data-e2e-id={"LoginButton"}>
       ログイン
       <TwitterIcon src={whiteTwitterIcon} alt="twitter" />
     </LoginLink>
