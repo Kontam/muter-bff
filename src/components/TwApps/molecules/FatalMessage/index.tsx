@@ -1,14 +1,14 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
-import { RootState } from '../../../../redux/reducers';
 import { mediaQ } from '../../../../modules/styles/media';
 import { MyThemeProps, resetAnchor } from '../../../../modules/styles/theme';
+import { ErrMessage } from '../../../../redux/reducers/page/errMessage';
+import { BasePath } from '../../../../redux/reducers/meta/basePath';
 
-const StateSelector = (state: RootState) => ({
-  errMessage: state.errMessage,
-  basePath: state.basePath,
-});
+type Props = {
+  errMessage: ErrMessage,
+  basePath: BasePath,
+};
 
 export const Container = styled.div`
   align-items: center;
@@ -57,8 +57,7 @@ export const Link = styled.a`
   }
 `;
 
-const FatalMessage = () => {
-  const { errMessage, basePath } = useSelector(StateSelector);
+const FatalMessage = ({ errMessage, basePath } :Props) => {
   return (
     <Container>
       <Content>

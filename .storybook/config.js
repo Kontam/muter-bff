@@ -1,6 +1,6 @@
 import { configure, addDecorator,addParameters } from '@storybook/react';
+import React from 'react';
 import { ThemeProvider } from 'styled-components';
-import requireContext from 'require-context.macro';
 
 import viewPorts from './viewports';
 import GlobalStyle from '../src/modules/styles/GlobalStyle';
@@ -16,10 +16,10 @@ addParameters({
     defaultViewport: 'PC',
   },
 });
-
+// jestではGlobalStyleのライブラリにあるwindowが参照できない
 addDecorator((story) => (
   <ThemeProvider theme={theme}>
-    <GlobalStyle props={theme}/>
+    {process.env.NODE_ENV !== 'test' && <GlobalStyle props={theme}/>}
     {story()}
   </ThemeProvider>
 ))

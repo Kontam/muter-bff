@@ -9,7 +9,12 @@ export const initialState :RootState = {
   appName: LoginConst.APPNAME_MUTER,
   basePath: "",
   isMuterMenuOpened: true,
-  userInfo :{},
+  userInfo : {
+    user_id: "",
+    user_name: "",
+    screen_name: "",
+    profile_image_url_https: "",
+  },
   mutedUsers :[],
   muted :[],
   muteRequestStatus :TwAppsConst.REQUEST_STATUS_COMPLETE,

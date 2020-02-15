@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { connect } from 'react-redux';
+import { useSelector } from 'react-redux';
 
 import { MyThemeProps } from '../../../../modules/styles/theme';
-import { UserInfo } from '../../../../redux/reducers/resource/userInfo';
 import { RootState } from '../../../../redux/reducers';
-import TwAppsConst from '../../TwAppsConst';
 
 export const ImgIcon = styled.img`
   border-radius: 50%;
@@ -25,29 +23,15 @@ export const Header = styled.header`
   top: 0;
   width: 100%;
 `;
-
-type TwAppsHeaderProps = {
-  userInfo : UserInfo;
-}
-
-type TwAppsHeaderState = {
-  menu: typeof TwAppsConst.HEADER_MENU_INITIAL,
-}
+const userInfoSelector = (state:RootState) => state.userInfo;
 
 /**
  * TwitterAppsの共通ヘッダ
  * 全アプリ感で共通のアイコン、メニューなどを提供する
  */
-class TwAppsHeader extends React.Component<any, TwAppsHeaderState> {
-  constructor(props :any) {
-    super(props);
-    this.state = {
-      menu: TwAppsConst.HEADER_MENU_INITIAL,
-    };
-  }
-
-  render() {
-    const imgUrl = this.props.userInfo.profile_image_url_https;
+const TwAppsHeader:React.FC = () => {
+    const userInfo = useSelector(userInfoSelector);
+    const imgUrl = userInfo.profile_image_url_https;
     const imgIconDOM = imgUrl ? <ImgIcon src={imgUrl} alt="icon" /> : '';
     return (
       <Header>
@@ -55,11 +39,6 @@ class TwAppsHeader extends React.Component<any, TwAppsHeaderState> {
       </Header>
     );
   }
-}
 
 
-export default connect(
-  (state: RootState) => ({
-    userInfo: state.userInfo,
-  }),
-)(TwAppsHeader);
+export default TwAppsHeader;

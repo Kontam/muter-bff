@@ -38,7 +38,7 @@ const TweetList = ({ showTweets, mutedTweets, }: Props) => {
   useEffect(() => {
     let height = 0;
     itemWrapperRefs.forEach((ref) => {
-      height += ref.current.clientHeight;
+      if (ref.current) height += ref.current.clientHeight;
     })
     setMaxHeight(height);
   },[showTweets])

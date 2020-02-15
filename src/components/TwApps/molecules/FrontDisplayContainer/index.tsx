@@ -1,17 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSelector } from 'react-redux';
-
-import { RootState } from '../../../../redux/reducers';
 import { MyThemeProps } from '../../../../modules/styles/theme';
-import TwAppsConst from '../../TwAppsConst';
 
 const loading_anim = require('../../../../../img/loading_anim.svg');
 
-const StateSelector = (state :RootState) => ({
-  muteRequestStatus: state.muteRequestStatus,
-  userRequestStatus: state.userRequestStatus,
-});
 
 export const Container = styled.div`
   align-items: center;
@@ -37,20 +29,21 @@ export const Caption = styled.p`
   font-size: .8rem;
 `;
 
+type Props = {
+  isLoading: boolean
+}
+
 /**
  *　画面の前面に出てくるエリア
  *　主にポップアップメッセージや、ロード画像の表示に使用する
  */
-const FrontDisplayContainer = () => {
-  const { userRequestStatus, muteRequestStatus } = useSelector(StateSelector);
+const FrontDisplayContainer = ({ isLoading }: Props) => {
 
   let style = {};
   // いずれかの要素がロード中の時は表示する
-  if (muteRequestStatus === TwAppsConst.REQUEST_STATUS_COMPLETE
-      && userRequestStatus === TwAppsConst.REQUEST_STATUS_COMPLETE) {
+  if (!isLoading) {
     style = { display: 'none' };
   }
-
 
   // background-imageは表示の優先順位が低いらしいのでimgタグを使用する
   return (

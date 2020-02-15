@@ -4,7 +4,7 @@ import { action } from '@storybook/addon-actions';
 import { withKnobs, boolean } from '@storybook/addon-knobs';
 
 export default {
-  title: 'atoms/UnmuteButton',
+  title: 'TwApps/atoms/UnmuteButton',
   decorators: [withKnobs],
 }
 

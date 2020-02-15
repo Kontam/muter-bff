@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import React from 'react';
 
 import LoginConst from '../../LoginConst';
 import CarouselArrow from '../../atoms/CarouselArrow'
@@ -49,8 +50,8 @@ export const slickConfig = {
   dots: true,
   arrows: true,
   dragable: true,
-  nextArrow: <CarouselArrow imgSrc={arrowLeft} direction={LoginConst.ARROW_DIRECTION_LEFT} />,
-  prevArrow: <CarouselArrow imgSrc={arrowRight} direction={LoginConst.ARROW_DIRECTION_RIGHT} />,
+  nextArrow: <CarouselArrow imgSrc={arrowRight} direction={LoginConst.ARROW_DIRECTION_RIGHT} />,
+  prevArrow: <CarouselArrow imgSrc={arrowLeft} direction={LoginConst.ARROW_DIRECTION_LEFT} />,
   appendDots: (dots :any) => <DotList>{dots}</DotList>,
   customPaging: () => CarouselDot(),
   responsive: [{

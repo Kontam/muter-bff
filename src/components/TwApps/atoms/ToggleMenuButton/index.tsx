@@ -1,11 +1,9 @@
 import React from 'react';
 import styled from 'styled-components';
-import { useSelector, useDispatch } from 'react-redux';
 
-import { setIsMuterMenuOpened, IsMuterMenuOpened } from '../../../../redux/reducers/page/isMuterMenuOpened';
+import { IsMuterMenuOpened } from '../../../../redux/reducers/page/isMuterMenuOpened';
 import { resetButton } from '../../../../modules/styles/theme';
 import { mediaQ } from '../../../../modules/styles/media';
-import { RootState } from '../../../../redux/reducers';
 const cross_icon = require('../../../../../img/cross_icon.svg');
 const hambargar_icon = require('../../../../../img/hambargar_icon.svg');
 
@@ -37,7 +35,6 @@ type Props = {
   onClick: React.MouseEventHandler,
   isMenuOpened: IsMuterMenuOpened,
 }
-
 
 /**
  * メニュー開閉状態をトグルするボタン

@@ -8,13 +8,6 @@ import { initialState } from '../redux/store';
 
 export const adapter = () => { enzyme.configure({ adapter: new Adapter() }) };
 
-/**
- *
- * @param initialState
- */
-
-
-
 export type LoginPageStore = Store<RootState>
 export const storeFactory = (state :RootState = initialState) => {
   return createStore(rootReducer, state, applyMiddleware(thunk),);
@@ -27,7 +20,12 @@ export const commonInitialState :RootState = {
   basePath: "https://basepath.com",
   appName: "MuteReminder",
   isMuterMenuOpened: true,
-  userInfo :{},
+  userInfo : {
+    user_id: "",
+    user_name: "",
+    screen_name: "",
+    profile_image_url_https: "",
+  },
   mutedUsers :[],
   muted :[],
   muteRequestStatus :"complete",

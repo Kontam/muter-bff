@@ -1,11 +1,11 @@
 import React from "react";
 import { withKnobs, select } from '@storybook/addon-knobs';
 import { action } from '@storybook/addon-actions';
-import ShowTweetButtonComponent from '../';
+import ShowTweetButtonComponent from '../index';
 import TwAppsConst from "../../../TwAppsConst";
 
 export default {
-  title: 'atoms/ShowTweetButton',
+  title: 'TwApps/atoms/ShowTweetButton',
   decorators: [withKnobs],
 }
 
