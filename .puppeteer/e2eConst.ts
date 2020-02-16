@@ -4,7 +4,7 @@ const e2eConst = {
     ownerPageUrl: 'https://konkonta.com/',
     ownerTwitterUrl: 'https://twitter.com/cha_han5656',
     twitterUrl: 'https://twitter.com/',
-    lineUrl: 'https://access.line.me/',
+    lineUrl: 'line.me',
     facebookUrl: 'https://www.facebook.com/',
     attrForE2E: 'data-e2e-id',
 } as const;

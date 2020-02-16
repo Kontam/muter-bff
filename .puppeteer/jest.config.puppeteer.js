@@ -1,6 +1,7 @@
 
 module.exports = {
     preset: 'jest-puppeteer',
+    testTimeout: 20000,
     transform: {
       '^.+\\.svg$': '<rootDir>/../.jest/svgTransform.js',
       '^.+\\.(tsx|ts|js)?$': 'ts-jest',
