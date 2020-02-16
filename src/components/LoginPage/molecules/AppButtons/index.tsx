@@ -46,7 +46,7 @@ const AppButtons = ({ appName } :AppButtonsProps) => {
           passHref
           scroll={false}
          >
-          <MuterButton appName={appName}>
+          <MuterButton appName={appName} data-e2e-id="AppButtons-MuterButton">
             ミュートリマインダー
           </MuterButton>
         </Link>
@@ -56,7 +56,7 @@ const AppButtons = ({ appName } :AppButtonsProps) => {
           href={`/${LoginConst.APPNAME_BLOCKER}`}
           scroll={false}
          >
-          <BlockerButton appName={appName}>
+          <BlockerButton appName={appName} data-e2e-id="AppButtons-BlockerButton">
             ブロックリマインダー
           </BlockerButton>
         </Link>

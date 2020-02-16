@@ -2,6 +2,23 @@ import assert from 'power-assert';
 import e2eConst from './e2eConst';
 import { Page } from 'puppeteer';
 
+describe("トップページのアプリ切り替えボタンのテスト", () => {
+    beforeEach(async () => {
+        await page.goto(e2eConst.baseUrl);
+    });
+    test.each([
+        ['BlockReminder切り替えボタン', "AppButtons-BlockerButton", e2eConst.blockReminderUrl],
+        ['MuteReminder切り替えボタン', "AppButtons-MuterButton", e2eConst.muteReminderUrl],
+    ])('%sのクライアントルーティングテスト', async (testname, id, expect) => {
+        await Promise.all([
+            page.waitForNavigation(),
+            page.click(`[${e2eConst.attrForE2E}=${id}]`),
+        ]);
+
+        assert.strictEqual(page.url(), expect);
+    });
+});
+
 describe("トップページのテスト", () => {
     beforeAll(async () => {
         await page.goto(e2eConst.baseUrl);
@@ -34,17 +51,20 @@ describe("トップページからの別タブ画面遷移のテスト(１階層
 
 describe("トップページから表示するポップアップウインドウ表示のテスト", () => {
     test.each([
+        ['Twitterで紹介ボタン', 'SNSLinkButton-Twitter', e2eConst.twitterUrl],
         ['Lineで紹介ボタン', 'SNSLinkButton-Line', e2eConst.lineUrl],
         ['Facebookで紹介ボタン', 'SNSLinkButton-Facebook', e2eConst.facebookUrl],
-        ['Twitterで紹介ボタン', 'SNSLinkButton-Twitter', e2eConst.twitterUrl],
     ])('%sのポップアップウィンドウテスト', async (testName, id, expectIncludedUrl) => {
         const newPagePromise = new Promise<Page>(resolve => browser.once('targetcreated', target => resolve(target.page())));
         await page.click(`[${e2eConst.attrForE2E}=${id}]`);
         const newPage = await newPagePromise;
+        // page.waitFor(2000);
         const url = newPage.url();
         await newPage.screenshot({path: `${e2eConst.outputDir}/${id}.png`})
-        newPage.close();
+        await newPage.close();
+        // page.waitFor(4000);
         console.log(url, expectIncludedUrl);
+        // assertをcloseの前に挟んだ場合、タイムアウトによってcloseできず後のテストに影響が出る可能性がある
         assert(url.includes(expectIncludedUrl));
     })
 });

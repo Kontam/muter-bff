@@ -6,7 +6,7 @@ module.exports = {
       '^.+\\.svg$': '<rootDir>/../.jest/svgTransform.js',
       '^.+\\.(tsx|ts|js)?$': 'ts-jest',
     },
-    testRegex: '(/__tests__/.*|(\\.|/)(test|spec))\\.(tsx|ts|js|jsx)$',
+    testRegex: '(/__tests__/.*|(\\.|/)(e2e|spec))\\.(tsx|ts|js|jsx)$',
     moduleFileExtensions: [
       'ts',
       'tsx',
