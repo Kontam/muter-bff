@@ -47,6 +47,7 @@ const TweetList = ({ showTweets, mutedTweets, }: Props) => {
     <List
       visible={showTweets === TwAppsConst.SHOW_TWEETS_OPENED}
       maxHeight={showTweets === TwAppsConst.SHOW_TWEETS_OPENED ? maxHeight : 0}
+      data-e2e-id={`TweetList_${showTweets}`}
     >
       {mutedTweets.map((mutedTweet, index) => (
         <ItemWrapper

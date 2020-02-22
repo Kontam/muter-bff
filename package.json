@@ -15,7 +15,7 @@
     "build-storybook": "build-storybook",
     "start": "npm run build:next && npm run start:fe",
     "storyshots": "npx jest --config=.storybook/jest.config.storyshoots.js",
-    "jest-puppeteer": "JEST_PUPPETEER_CONFIG=./.puppeteer/jest-puppeteer.config.js npx jest --config=.puppeteer/jest.config.puppeteer.js"
+    "jest-puppeteer": "JEST_PUPPETEER_CONFIG=./.puppeteer/jest-puppeteer.config.js npx jest --config=.puppeteer/jest.config.puppeteer.js --runInBand"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

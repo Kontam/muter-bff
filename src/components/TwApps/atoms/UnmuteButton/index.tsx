@@ -59,6 +59,7 @@ const UnmuteButton = ({ muted, onClick, isForMobile = true }: Props) => {
     <Button
       type="button"
       onClick={() => { onClick(); }}
+      data-e2e-id={`UnmuteButton_${muted ? 'muted' : 'unmuted'}`}
     >
       <Icon className={muted ? 'unmute-icon' : 'mute-icon'} />
       {muted ? 'ミュート解除' : 'ミュート'}

@@ -1,6 +1,7 @@
 const e2eConst = {
     outputDir: '.puppeteer/output/',
     baseUrl: 'http://localhost:5000',
+    loginPageUrl: 'https://api.twitter.com/oauth/authorize',
     muteReminderUrl: 'http://localhost:5000/',
     blockReminderUrl: 'http://localhost:5000/BlockReminder',
     ownerPageUrl: 'https://konkonta.com/',

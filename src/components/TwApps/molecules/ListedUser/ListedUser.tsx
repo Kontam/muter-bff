@@ -87,7 +87,7 @@ const ListedUser = ({
   const mutedUser = mutedUserInfo.muted_user;
 
   return (
-    <Item ref={listedUserRef}>
+    <Item ref={listedUserRef} data-user={mutedUser.screen_name} data-e2e-id="ListedUser">
       <TopContainer>
         <Icon src={mutedUser.profile_image_url_https} alt="icon" />
         <UserNameContainer>

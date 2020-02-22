@@ -69,7 +69,7 @@ type Props = {
 
 const MuterMenu = ({ isOpened, onMenuButtonClick }: Props) => {
   return (
-    <Container isOpened={isOpened}>
+    <Container isOpened={isOpened} data-e2e-id={`MuterMenu_${isOpened ? "opened" : "closed"}`}>
       <ToggleMenuButton
         onClick={() => {
           onMenuButtonClick();

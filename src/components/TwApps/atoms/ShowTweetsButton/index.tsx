@@ -54,6 +54,7 @@ const ShowTweetsButton = ({ showTweets, onClick }: ShowTweetsButtonProps) => {
     <Button
       type="button"
       onClick={onClick}
+      data-e2e-id={`ShowTweetsButton_${showTweets}`}
     >
       <Icon />
       <LabelForPC>ツイートを</LabelForPC>

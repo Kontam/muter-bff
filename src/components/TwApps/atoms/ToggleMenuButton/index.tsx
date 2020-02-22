@@ -48,6 +48,7 @@ const ToggleMuterMenuButton = ({ onClick, isMenuOpened }: Props) => {
     <Container>
       <Button
         onClick={onClick}
+        data-e2e-id={`ToggleMuterMenuButton_${isMenuOpened ? 'opened' : 'closed'}`}
       >
         <Icon className="menu-toggle-icon" src={imgUrl} alt="close"/>
       </Button>

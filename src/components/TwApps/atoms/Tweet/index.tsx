@@ -1,16 +1,21 @@
-import React from 'react';
-import styled from 'styled-components';
+import React from "react";
+import styled from "styled-components";
 
-import { TweetsInfo } from '../../../../redux/reducers/resource/mutedUsers';
-import { mediaQ } from '../../../../modules/styles/media';
-import { resetAnchor, MyThemeProps, divIcon } from '../../../../modules/styles/theme';
-const retweet_icon = require('../../../../../img/retweet_icon.svg');
-const favorite_icon = require('../../../../../img/favorite_icon.svg')
-const twitter_icon = require('../../../../../img/twitter_icon.svg')
-const twitter_white_icon = require('../../../../../img/twitter_white_icon.svg')
+import { TweetsInfo } from "../../../../redux/reducers/resource/mutedUsers";
+import { mediaQ } from "../../../../modules/styles/media";
+import {
+  resetAnchor,
+  MyThemeProps,
+  divIcon
+} from "../../../../modules/styles/theme";
+const retweet_icon = require("../../../../../img/retweet_icon.svg");
+const favorite_icon = require("../../../../../img/favorite_icon.svg");
+const twitter_icon = require("../../../../../img/twitter_icon.svg");
+const twitter_white_icon = require("../../../../../img/twitter_white_icon.svg");
 
 const Container = styled.div`
-  border-bottom: 1px solid ${({ theme }: MyThemeProps<{}>) => theme.colors.darkGray};;
+  border-bottom: 1px solid
+    ${({ theme }: MyThemeProps<{}>) => theme.colors.darkGray};
   padding: 10px;
   white-space: pre-line;
   ${mediaQ.pc} {
@@ -91,9 +96,10 @@ const TwitterLink = styled.a`
   ${mediaQ.pc} {
     ${resetAnchor};
     align-items: center;
-    background-color: ${({ theme }: MyThemeProps<{}>) => theme.colors.twitterBlue};
+    background-color: ${({ theme }: MyThemeProps<{}>) =>
+      theme.colors.twitterBlue};
     border-radius: 5px;
-    color: ${({ theme }: MyThemeProps<{}>) => theme.colors.basicWhite};;
+    color: ${({ theme }: MyThemeProps<{}>) => theme.colors.basicWhite};
     display: flex;
     font-size: 1rem;
     height: 25px;
@@ -114,15 +120,15 @@ const TwitterIcon = styled.div`
 `;
 
 const LabelForPc = styled.span`
-    display: none;
-    ${mediaQ.pc} {
-      display: inline;
-      margin-left: 10px;
-    }
+  display: none;
+  ${mediaQ.pc} {
+    display: inline;
+    margin-left: 10px;
+  }
 `;
 
 type Props = {
-  mutedTweet: TweetsInfo
+  mutedTweet: TweetsInfo;
 };
 
 /**
@@ -134,26 +140,28 @@ const Tweet: React.FC<Props> = ({ mutedTweet }: Props) => {
     <Container>
       <TweetText>{mutedTweet.tweet_text}</TweetText>
       <MediaList>
-        {
-          mutedTweet.media_infos.map(media => (
-            <MediaItem
-              key={media.media_url_https}
-            >
-              <Media alt="media" src={media.media_url_https} />
-            </MediaItem>
-          ))
-        }
+        {mutedTweet.media_infos.map(media => (
+          <MediaItem key={media.media_url_https}>
+            <Media alt="media" src={media.media_url_https} />
+          </MediaItem>
+        ))}
       </MediaList>
       <TweetInfoContainer>
         <TweetCountInfo>
-          <FavoriteIcon/>
+          <FavoriteIcon />
           <FavoriteCount>{mutedTweet.favorite_count}</FavoriteCount>
         </TweetCountInfo>
         <TweetCountInfo>
           <RetweetIcon />
           <RetweetCount>{mutedTweet.retweet_count}</RetweetCount>
         </TweetCountInfo>
-        <TwitterLink href={mutedTweet.tweet_url} target="_blank" rel="noopener noreferrer" className="open-twitter-link">
+        <TwitterLink
+          href={mutedTweet.tweet_url}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="open-twitter-link"
+          data-e2e-id="TwitterLink"
+        >
           <TwitterIcon className="twitter-icon" />
           <LabelForPc className="pc-twitter-label">twitterで見る</LabelForPc>
         </TwitterLink>

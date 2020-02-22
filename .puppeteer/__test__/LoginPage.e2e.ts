@@ -1,8 +1,12 @@
 import assert from 'power-assert';
-import e2eConst from './e2eConst';
+import e2eConst from '../e2eConst';
 import { Page } from 'puppeteer';
+import { Viewport } from 'puppeteer/DeviceDescriptors';
+
+const viewport: Viewport = { width: 1440, height: 900 } as Viewport; 
 
 describe("トップページのアプリ切り替えボタンのテスト", () => {
+    page.setViewport(viewport);
     beforeEach(async () => {
         await page.goto(e2eConst.baseUrl);
     });
@@ -43,6 +47,7 @@ describe("トップページからの別タブ画面遷移のテスト(１階層
         const newPagePromise = new Promise<Page>(resolve => browser.once('targetcreated', target => resolve(target.page())));
         await page.click(`[${e2eConst.attrForE2E}=${id}]`);
         const newPage = await newPagePromise;
+        await newPage.setViewport(viewport);
         await newPage.screenshot({path: `${e2eConst.outputDir}/${id}.png`})
         await assert.strictEqual(await newPage.url(), expectedUrl);
         await newPage.close();
@@ -58,12 +63,9 @@ describe("トップページから表示するポップアップウインドウ�
         const newPagePromise = new Promise<Page>(resolve => browser.once('targetcreated', target => resolve(target.page())));
         await page.click(`[${e2eConst.attrForE2E}=${id}]`);
         const newPage = await newPagePromise;
-        // page.waitFor(2000);
         const url = newPage.url();
         await newPage.screenshot({path: `${e2eConst.outputDir}/${id}.png`})
         await newPage.close();
-        // page.waitFor(4000);
-        console.log(url, expectIncludedUrl);
         // assertをcloseの前に挟んだ場合、タイムアウトによってcloseできず後のテストに影響が出る可能性がある
         assert(url.includes(expectIncludedUrl));
     })
