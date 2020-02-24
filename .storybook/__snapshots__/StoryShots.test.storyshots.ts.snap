@@ -49,6 +49,7 @@ exports[`Storyshots LoginPage/atoms/CarouselDot Show Tweet Button 1`] = `
 exports[`Storyshots TwApps/atoms/ShowTweetButton Show Tweet Button 1`] = `
 <button
   className="sc-caSCKo jCRLSt"
+  data-e2e-id="ShowTweetsButton_initial"
   onClick={[Function]}
   type="button"
 >
@@ -73,6 +74,7 @@ exports[`Storyshots TwApps/atoms/ToggleMenuButton Toggle Mute Button 1`] = `
   >
     <button
       className="sc-cSHVUG bhxyBA"
+      data-e2e-id="ToggleMuterMenuButton_opened"
       onClick={[Function]}
     >
       <img
@@ -87,7 +89,7 @@ exports[`Storyshots TwApps/atoms/ToggleMenuButton Toggle Mute Button 1`] = `
 
 exports[`Storyshots TwApps/atoms/Tweet Tweet 1`] = `
 <div
-  className="sc-chPdSV RZrGb"
+  className="sc-chPdSV bqfxdD"
 >
   <p
     className="sc-kgoBCf eKLFlP"
@@ -125,7 +127,8 @@ exports[`Storyshots TwApps/atoms/Tweet Tweet 1`] = `
       </p>
     </div>
     <a
-      className="sc-iAyFgw kHuthd open-twitter-link"
+      className="sc-iAyFgw dBJicQ open-twitter-link"
+      data-e2e-id="TwitterLink"
       href="https://twitter.com/cha_han5656"
       rel="noopener noreferrer"
       target="_blank"
@@ -134,7 +137,7 @@ exports[`Storyshots TwApps/atoms/Tweet Tweet 1`] = `
         className="sc-hSdWYo eHhjMN twitter-icon"
       />
       <span
-        className="sc-eHgmQL ikwqBM pc-twitter-label"
+        className="sc-eHgmQL biXIEI pc-twitter-label"
       >
         twitterで見る
       </span>
@@ -150,6 +153,7 @@ Array [
   </h2>,
   <button
     className="sc-cJSrbW gZlJVm"
+    data-e2e-id="UnmuteButton_muted"
     onClick={[Function]}
     type="button"
   >
@@ -168,6 +172,7 @@ Array [
   </h2>,
   <button
     className="sc-TOsTZ iLsaRe"
+    data-e2e-id="UnmuteButton_unmuted"
     onClick={[Function]}
     type="button"
   >
@@ -222,6 +227,8 @@ exports[`Storyshots TwApps/molecules/FrontDisplayContainer Front Display Contain
 exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
 <li
   className="sc-gipzik kHoOKC"
+  data-e2e-id="ListedUser"
+  data-user="culalaTP"
 >
   <div
     className="sc-ksYbfQ kSTJoF"
@@ -248,6 +255,7 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
     </div>
     <button
       className="sc-kvZOFW lpaVtS"
+      data-e2e-id="UnmuteButton_muted"
       onClick={[Function]}
       type="button"
     >
@@ -259,12 +267,13 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
   </div>
   <ul
     className="sc-jlyJG cbQYIm"
+    data-e2e-id="TweetList_initial"
   >
     <li
       className="sc-iRbamj blSEcj"
     >
       <div
-        className="sc-chPdSV RZrGb"
+        className="sc-chPdSV bqfxdD"
       >
         <p
           className="sc-kgoBCf eKLFlP"
@@ -303,7 +312,8 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
             </p>
           </div>
           <a
-            className="sc-iAyFgw kHuthd open-twitter-link"
+            className="sc-iAyFgw dBJicQ open-twitter-link"
+            data-e2e-id="TwitterLink"
             href="https://twitter.com/culalaTP/status/1227046563693772801"
             rel="noopener noreferrer"
             target="_blank"
@@ -312,7 +322,7 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
               className="sc-hSdWYo eHhjMN twitter-icon"
             />
             <span
-              className="sc-eHgmQL ikwqBM pc-twitter-label"
+              className="sc-eHgmQL biXIEI pc-twitter-label"
             >
               twitterで見る
             </span>
@@ -326,6 +336,7 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
   >
     <button
       className="sc-jbKcbu cyXMbz"
+      data-e2e-id="UnmuteButton_muted"
       onClick={[Function]}
       type="button"
     >
@@ -336,6 +347,7 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
     </button>
     <button
       className="sc-dNLxif bEQnLd"
+      data-e2e-id="ShowTweetsButton_initial"
       onClick={[Function]}
       type="button"
     >
@@ -356,12 +368,14 @@ exports[`Storyshots TwApps/molecules/ListedUser Listed User 1`] = `
 exports[`Storyshots TwApps/molecules/MuterMenu Muter Menu 1`] = `
 <div
   className="sc-jhAzac foyByv"
+  data-e2e-id="MuterMenu_opened"
 >
   <div
     className="sc-fjdhpX dKWwgc"
   >
     <button
       className="sc-cSHVUG bhxyBA"
+      data-e2e-id="ToggleMuterMenuButton_opened"
       onClick={[Function]}
     >
       <img
@@ -386,12 +400,13 @@ exports[`Storyshots TwApps/molecules/MuterMenu Muter Menu 1`] = `
 exports[`Storyshots TwApps/molecules/TweetList Tweet List 1`] = `
 <ul
   className="sc-jlyJG iymBjZ"
+  data-e2e-id="TweetList_opened"
 >
   <li
     className="sc-iRbamj blSEcj"
   >
     <div
-      className="sc-chPdSV RZrGb"
+      className="sc-chPdSV bqfxdD"
     >
       <p
         className="sc-kgoBCf eKLFlP"
@@ -430,7 +445,8 @@ exports[`Storyshots TwApps/molecules/TweetList Tweet List 1`] = `
           </p>
         </div>
         <a
-          className="sc-iAyFgw kHuthd open-twitter-link"
+          className="sc-iAyFgw dBJicQ open-twitter-link"
+          data-e2e-id="TwitterLink"
           href="http://localhost:6006"
           rel="noopener noreferrer"
           target="_blank"
@@ -439,7 +455,7 @@ exports[`Storyshots TwApps/molecules/TweetList Tweet List 1`] = `
             className="sc-hSdWYo eHhjMN twitter-icon"
           />
           <span
-            className="sc-eHgmQL ikwqBM pc-twitter-label"
+            className="sc-eHgmQL biXIEI pc-twitter-label"
           >
             twitterで見る
           </span>
@@ -451,7 +467,7 @@ exports[`Storyshots TwApps/molecules/TweetList Tweet List 1`] = `
     className="sc-iRbamj blSEcj"
   >
     <div
-      className="sc-chPdSV RZrGb"
+      className="sc-chPdSV bqfxdD"
     >
       <p
         className="sc-kgoBCf eKLFlP"
@@ -489,7 +505,8 @@ exports[`Storyshots TwApps/molecules/TweetList Tweet List 1`] = `
           </p>
         </div>
         <a
-          className="sc-iAyFgw kHuthd open-twitter-link"
+          className="sc-iAyFgw dBJicQ open-twitter-link"
+          data-e2e-id="TwitterLink"
           href="http://localhost:6006"
           rel="noopener noreferrer"
           target="_blank"
@@ -498,7 +515,7 @@ exports[`Storyshots TwApps/molecules/TweetList Tweet List 1`] = `
             className="sc-hSdWYo eHhjMN twitter-icon"
           />
           <span
-            className="sc-eHgmQL ikwqBM pc-twitter-label"
+            className="sc-eHgmQL biXIEI pc-twitter-label"
           >
             twitterで見る
           </span>
@@ -521,6 +538,8 @@ Array [
   >
     <li
       className="sc-gipzik kHoOKC"
+      data-e2e-id="ListedUser"
+      data-user="culalaTP"
     >
       <div
         className="sc-uJMKN cLqoWz"
@@ -547,6 +566,7 @@ Array [
         </div>
         <button
           className="sc-jnlKLf hyQzfV"
+          data-e2e-id="UnmuteButton_muted"
           onClick={[Function]}
           type="button"
         >
@@ -558,12 +578,13 @@ Array [
       </div>
       <ul
         className="sc-jlyJG cbQYIm"
+        data-e2e-id="TweetList_initial"
       >
         <li
           className="sc-iRbamj blSEcj"
         >
           <div
-            className="sc-chPdSV RZrGb"
+            className="sc-chPdSV bqfxdD"
           >
             <p
               className="sc-kgoBCf eKLFlP"
@@ -602,7 +623,8 @@ Array [
                 </p>
               </div>
               <a
-                className="sc-iAyFgw kHuthd open-twitter-link"
+                className="sc-iAyFgw dBJicQ open-twitter-link"
+                data-e2e-id="TwitterLink"
                 href="https://twitter.com/801"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -611,7 +633,7 @@ Array [
                   className="sc-hSdWYo eHhjMN twitter-icon"
                 />
                 <span
-                  className="sc-eHgmQL ikwqBM pc-twitter-label"
+                  className="sc-eHgmQL biXIEI pc-twitter-label"
                 >
                   twitterで見る
                 </span>
@@ -623,7 +645,7 @@ Array [
           className="sc-iRbamj blSEcj"
         >
           <div
-            className="sc-chPdSV RZrGb"
+            className="sc-chPdSV bqfxdD"
           >
             <p
               className="sc-kgoBCf eKLFlP"
@@ -661,7 +683,8 @@ Array [
                 </p>
               </div>
               <a
-                className="sc-iAyFgw kHuthd open-twitter-link"
+                className="sc-iAyFgw dBJicQ open-twitter-link"
+                data-e2e-id="TwitterLink"
                 href="https://twitter.com/772801"
                 rel="noopener noreferrer"
                 target="_blank"
@@ -670,7 +693,7 @@ Array [
                   className="sc-hSdWYo eHhjMN twitter-icon"
                 />
                 <span
-                  className="sc-eHgmQL ikwqBM pc-twitter-label"
+                  className="sc-eHgmQL biXIEI pc-twitter-label"
                 >
                   twitterで見る
                 </span>
@@ -684,6 +707,7 @@ Array [
       >
         <button
           className="sc-tilXH VdVzC"
+          data-e2e-id="UnmuteButton_muted"
           onClick={[Function]}
           type="button"
         >
@@ -694,6 +718,7 @@ Array [
         </button>
         <button
           className="sc-hEsumM cNlKWd"
+          data-e2e-id="ShowTweetsButton_initial"
           onClick={[Function]}
           type="button"
         >
