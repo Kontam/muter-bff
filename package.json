@@ -9,13 +9,14 @@
     "start:fe": "NODE_PATH=./bff NODE_ENV=production ./node_modules/.bin/ts-node --project tsconfig.bff.json bff/index.ts",
     "start:dev:fe": "NODE_PATH=./bff NODE_ENV=development ./node_modules/.bin/ts-node --project tsconfig.bff.json bff/index.ts",
     "start:nodemon": "nodemon",
-    "puppeteer": "./node_modules/.bin/ts-node tests/Puppeteer/index.ts",
-    "test": "npx jest && npm run storyshots",
+    "puppeteer": "HEADLESS=false ./node_modules/.bin/ts-node tests/Puppeteer/index.ts",
+    "test": "npx jest && npm run storyshots && npm run jest-puppeteer:headless",
     "storybook": "start-storybook -p 6006 -s ./public",
     "build-storybook": "build-storybook",
     "start": "npm run build:next && npm run start:fe",
     "storyshots": "npx jest --config=.storybook/jest.config.storyshoots.js",
-    "jest-puppeteer": "JEST_PUPPETEER_CONFIG=./.puppeteer/jest-puppeteer.config.js npx jest --config=.puppeteer/jest.config.puppeteer.js --runInBand"
+    "jest-puppeteer": "HEADLESS=false JEST_PUPPETEER_CONFIG=./.puppeteer/jest-puppeteer.config.js npx jest --config=.puppeteer/jest.config.puppeteer.js --runInBand",
+    "jest-puppeteer:headless": "HEADLESS=true JEST_PUPPETEER_CONFIG=./.puppeteer/jest-puppeteer.config.js npx jest --config=.puppeteer/jest.config.puppeteer.js --runInBand"
   },
   "devDependencies": {
     "@babel/core": "^7.7.7",

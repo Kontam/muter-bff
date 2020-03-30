@@ -2,7 +2,8 @@
 
 cd ../../
 npm install
-npx jest
+npm run build:next
+npm run test
 if [ $? = 0 ]; then
   BOT_MESSAGE="<!here>\nGitHubのジョブは無事に成功したようです。\nお疲れ様でした。"
   STATUS=0
