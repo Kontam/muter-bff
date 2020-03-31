@@ -1,4 +1,5 @@
 # Mute Reminder
+URL: https://app.konkonta.com/
 
 ## 概要
 Twitterでミュートしたユーザーを表示するWebアプリケーションです。  
